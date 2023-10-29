@@ -15,8 +15,8 @@ dependencies:
     specifier: ^1.3.8
     version: 1.3.8(graphql@15.8.0)(react@18.2.0)(subscriptions-transport-ws@0.9.19)
   '@etherspot/transaction-kit':
-    specifier: ^0.6.6
-    version: 0.6.6(graphql@15.8.0)(react@18.2.0)(subscriptions-transport-ws@0.9.19)
+    specifier: ^0.6.7
+    version: 0.6.7(graphql@15.8.0)(react@18.2.0)(subscriptions-transport-ws@0.9.19)
   '@mui/material':
     specifier: ^5.14.15
     version: 5.14.15(@emotion/react@11.11.1)(@emotion/styled@11.11.0)(@types/react@18.2.33)(react-dom@18.2.0)(react@18.2.0)
@@ -1893,8 +1893,8 @@ packages:
       - utf-8-validate
     dev: false
 
-  /@etherspot/transaction-kit@0.6.6(graphql@15.8.0)(react@18.2.0)(subscriptions-transport-ws@0.9.19):
-    resolution: {integrity: sha512-oOqjJmww7eM3TuXO5jWmJmVbmU+Gd3U9IJ+cwLQwnjMnr4eOUUr2EOuTH6NSlZ3qJ+7etstLCYPF6T5P5Ndoug==}
+  /@etherspot/transaction-kit@0.6.7(graphql@15.8.0)(react@18.2.0)(subscriptions-transport-ws@0.9.19):
+    resolution: {integrity: sha512-EOorENW9vFYRUsfU/hatf9rPMHFJC/4bm1eUnv0JTLEsSEhq9Pg8sTt8Zf/Rn5rpEEMHffwwm69YZpbbX2jjYw==}
     peerDependencies:
       react: '>=16.13.0'
     dependencies:

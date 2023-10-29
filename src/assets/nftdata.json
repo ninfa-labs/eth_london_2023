@@ -14,10 +14,10 @@
       "commissionRecipients": []
     },
     "signature": "0x6b5200115b9e55d5f64cced1a4414c69c3e836bb35597b471d5594234bff0a125a5a2bca71769838daf62343bc93daaa018c791c5c1c3c27364a6a3d7c33628b1c",
-    "owner": "0xB7854C085f72869197476D7765840eEFF318A8b5",
+    "owner": "0x4C2A7a992A1474DF18012AD1D79b3376e9051e8f",
     "creator": "0xf9d7F42FbE699D026618d62657208c38a4604ca2",
     "imageUri": "ipfs://QmTZJSdof6poQr65gHyMPEc6S21iJxpaRspEefboQN9YKE",
-    "tokenId": null
+    "tokenId": 0
   },
   {
     "price": 0.01,
@@ -34,10 +34,10 @@
       "commissionRecipients": []
     },
     "signature": "0xbc16c21fbd7f4d00a9d1bdd76c9524ad7c5e103362e9bac3c4a91d0e3708f7350849527150d2329237e98ae4ee9e6a777c7c3b3b195141e32ecac15a937903f51b",
-    "owner": "0xf9d7F42FbE699D026618d62657208c38a4604ca2",
+    "owner": "0xB7854C085f72869197476D7765840eEFF318A8b5",
     "creator": "0xf9d7F42FbE699D026618d62657208c38a4604ca2",
     "imageUri": "ipfs://Qme1ZZ4ehoxgRL6pKuHBTWUbGiBbTWkv5bMXzzXiqcw5tY",
-    "tokenId": null
+    "tokenId": 1
   },
   {
     "price": 0.01,
