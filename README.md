@@ -36,10 +36,10 @@ controlled by any web2 authentication method, OAuth, OTP or WebAuthn.
   - Social Recovery usin Web3Auth
   - (TODO) Add verifiable claims such as KYC or ENS to verify ownership of Account Abstraction contract for frontends.
 - **Smart Contracts**
-  - Self-sovereign ERC-721 developed in-house at Ninfa.io featuring
-    - Embedded buy and sell functions including lazy minting (ERC-712)
-  - Contract Factory
-  - Extensions; burnable, enumerable, metadataURI, creator royalties
+  - Self-sovereign ERC-721 developed in-house at Ninfa.io deployed via Factory contract
+  - Buy and sell functions including lazy minting and selling using ERC-712
+    - ERC-1271 Signature Validation Method for Contracts (allows MPC wallets to sign on behalf of ERC-4337 account)
+  - Extensions; burnable, enumerable, metadataURI, creator royalties EIP-2981
 
 ## Prerequisites
 
