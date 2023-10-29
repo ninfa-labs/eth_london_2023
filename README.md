@@ -22,7 +22,7 @@ controlled by any web2 authentication method, OAuth, OTP or WebAuthn.
 - [Prerequisites](#prerequisites)
 - [Getting Started](#getting-started)
 - [Obtaining API Keys](#obtaining-api-keys)
-- [Initializing The Project](#initializing-the-project)
+- [Live Goerli Deployment](#live-goerli-deployment)
 - [License](#license)
 
 ## Features
@@ -82,15 +82,7 @@ REACT_APP_GOOGLE=""
 REACT_APP_WEB3AUTH_CLIENT_ID=""
 ```
 
-## Initializing the Project
-
-### Run Anvil
-
-In a new terminal start the development blockchain
-
-`anvil`
-
-### Live Goerli Deployment
+## Live Goerli Deployment
 
 `ERC721Sovereign.sol: 0xbf9bC60DFBC46D8e9ca6504583330593f6dF8246`
 
