@@ -14,16 +14,36 @@ import EtherspotNavbar from "./components/EtherspotNavbar";
 import OwnerPanel from "./components/OwnerPanel";
 import { EtherspotTransactionKit } from "@etherspot/transaction-kit";
 import { Web3WalletProvider } from "@etherspot/prime-sdk";
+import { ethers, Contract } from "ethers";
+import abi from "./assets/ERC721SovreignLazyMint.abi.json";
 import "./App.css";
 
-const clientId =
-  "BFyVT7dZ4kygMw80vMxT8Rg-KTD-YXGlTkGb28VaWqiyY8-V8rK6JuvQDZbsTsOA5Ds8k6DRpUmqDAn5UzkVzpE"; // get from https://dashboard.web3auth.io
+const contractAddress = "0x091541AC5b5B1BCBd879F4dCD07B5F01007aBA7B"; // hardcoded for simplicity
+
+const clientId = process.env.REACT_APP_WEB3AUTH_CLIENT_ID as string; // get from https://dashboard.web3auth.io
 
 function App() {
   const [web3auth, setWeb3auth] = useState<Web3Auth | null>(null);
   const [provider, setProvider] = useState<IProvider | null>(null);
+  const [nftContract, setNftContract] = useState<Contract | null>(null);
 
   const [panel, setPanel] = useState<"main" | "owner">("main");
+
+  useEffect(() => {
+    const init = async () => {
+      const provider = new ethers.providers.JsonRpcProvider(
+        `https://goerli.infura.io/v3/${process.env.REACT_APP_INFURA_PROJECT_ID}`
+      );
+      const contractInstance = new ethers.Contract(
+        contractAddress,
+        abi,
+        provider
+      );
+      setNftContract(contractInstance);
+    };
+
+    init();
+  }, []);
 
   useEffect(() => {
     const init = async () => {
@@ -50,8 +70,7 @@ function App() {
                 name: "Google Login", // The desired name you want to show on the login button
                 verifier: "test-v", // Please create a verifier on the developer dashboard and pass the name here
                 typeOfLogin: "google", // Pass on the login provider of the verifier you've created
-                clientId:
-                  "219220047438-5rkk0lc4d8s71jsvkko26vueeq0lbo2h.apps.googleusercontent.com", // use your app client id you got from google
+                clientId: process.env.REACT_APP_GOOGLE as string, // use your app client id you got from google
               },
               // Add other login providers here
             },
@@ -161,9 +180,9 @@ function App() {
         />
 
         {panel === "main" ? (
-          <EtherspotMain provider={provider} />
+          <EtherspotMain provider={provider} contract={nftContract} />
         ) : (
-          <OwnerPanel />
+          <OwnerPanel contract={nftContract} />
         )}
       </div>
     </EtherspotTransactionKit>

@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import nftData from "../assets/nftdata.json";
 import { useWalletAddress } from "@etherspot/transaction-kit";
 import {
@@ -8,10 +8,11 @@ import {
   useEtherspotTransactions,
 } from "@etherspot/transaction-kit";
 import { Dialog } from "@mui/material";
+import { Contract } from "ethers";
 
 const contractAddress = "0x091541AC5b5B1BCBd879F4dCD07B5F01007aBA7B"; // hardcoded for simplicity
 
-const OwnerPanel = () => {
+const OwnerPanel = ({ contract }: { contract: Contract | null }) => {
   const etherspotAddress = useWalletAddress("etherspot-prime", 5);
 
   const [selectedNft, setSelectedNft] = useState<
@@ -34,12 +35,15 @@ const OwnerPanel = () => {
           marginTop: 30,
         }}
       >
-        {nftData.map((nft, i) => {
-          if (!etherspotAddress) return null;
-          if (nft.owner.toLowerCase() !== etherspotAddress.toLowerCase())
-            return null;
-          return <Card key={i} nft={nft} onClick={setSelectedNft} />;
-        })}
+        {nftData.map((nft, i) => (
+          <Card
+            key={i}
+            nft={nft}
+            onClick={setSelectedNft}
+            address={etherspotAddress || ""}
+            contract={contract}
+          />
+        ))}
       </div>
       {selectedNft && etherspotAddress ? (
         <TransferModal
@@ -58,20 +62,37 @@ export default OwnerPanel;
 const Card = ({
   nft,
   onClick,
+  contract,
+  address,
 }: {
   nft: (typeof nftData)[number];
   onClick: (nft: (typeof nftData)[number]) => void;
+  contract: Contract | null;
+  address: string;
 }) => {
+  const [isOwner, setIsOwner] = useState(false);
+  useEffect(() => {
+    if (!contract || nft.tokenId === null) {
+      setIsOwner(false);
+      return;
+    }
+    const checkOwner = async () => {
+      const owner = (await contract.ownerOf(nft.tokenId)) as string;
+      setIsOwner(owner.toLowerCase() === address.toLowerCase());
+    };
+    checkOwner();
+  }, [address]);
   return (
     <div
       style={{
         width: 400,
         height: 600,
-        display: "flex",
+
         flexDirection: "column",
         border: "1px blueviolet solid",
         borderRadius: 24,
         padding: 1,
+        display: isOwner ? "flex" : "none",
       }}
     >
       <img

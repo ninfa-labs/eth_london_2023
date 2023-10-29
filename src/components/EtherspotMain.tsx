@@ -2,8 +2,15 @@ import React, { useEffect, useState } from "react";
 import { IProvider } from "@web3auth/base";
 import nftData from "../assets/nftdata.json";
 import { useWalletAddress } from "@etherspot/transaction-kit";
+import { ethers, Contract } from "ethers";
 
-const EtherspotMain = ({ provider }: { provider: IProvider | null }) => {
+const EtherspotMain = ({
+  provider,
+  contract,
+}: {
+  provider: IProvider | null;
+  contract: Contract | null;
+}) => {
   const etherspotAddress = useWalletAddress("etherspot-prime", 5);
   return (
     <div
@@ -25,10 +32,8 @@ const EtherspotMain = ({ provider }: { provider: IProvider | null }) => {
           <Card
             nft={nft}
             key={i}
-            isOwner={
-              etherspotAddress !== undefined &&
-              nft.owner.toLowerCase() !== etherspotAddress.toLowerCase()
-            }
+            address={etherspotAddress || ""}
+            contract={contract}
           />
         ))}
       </div>
@@ -40,11 +45,27 @@ export default EtherspotMain;
 
 const Card = ({
   nft,
-  isOwner,
+  address,
+  contract,
 }: {
   nft: (typeof nftData)[number];
-  isOwner: boolean;
+  address: string;
+  contract: Contract | null;
 }) => {
+  const [isOwner, setIsOwner] = useState(false);
+  useEffect(() => {
+    if (!contract || nft.tokenId === null) {
+      setIsOwner(false);
+      return;
+    }
+    const checkOwner = async () => {
+      console.log(nft.tokenId);
+      const owner = (await contract.ownerOf(nft.tokenId)) as string;
+      console.log(nft.tokenId, owner, address);
+      setIsOwner(owner.toLowerCase() === address.toLowerCase());
+    };
+    checkOwner();
+  }, [address]);
   return (
     <div
       style={{
@@ -83,8 +104,8 @@ const Card = ({
             borderRadius: 24,
             cursor: "pointer",
             fontSize: 16,
-            opacity: isOwner ? 1 : 0,
-            pointerEvents: isOwner ? "all" : "none",
+            opacity: !isOwner ? 1 : 0,
+            pointerEvents: !isOwner ? "all" : "none",
           }}
         >
           buy
