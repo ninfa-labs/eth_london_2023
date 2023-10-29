@@ -90,40 +90,9 @@ In a new terminal start the development blockchain
 
 `anvil`
 
-### Run Deployment Script
+### Live Goerli Deployment
 
-Deploy Locally
-
-`forge script script/DeployERC721.s.sol:Anvil --fork-url=localhost -vv --broadcast`
-
-or deploy on testnet
-
-`forge script script/DeployERC721.s.sol:Goerli --fork-url=goerli -vv --broadcast`
-
-### Run IPFS script
-
-Run the node script providing as arguments the chain id and the ERC721 contract address, found in
-`./broadcast/DeployERC721.s.sol/<chainId>/run-latest.json` under `transactions[0].contractAddress`
-
-`node src/utils/ipfs.mjs <chainId> <deployed_contract_address>`
-
-When using Anvil the contract address will always be the same, as long as the deployment script is run on a fresh Anvil
-instance, i.e. the CREATE tx is the first on the local blockchain and the deployer is account[0]
-
-`node src/utils/ipfs.mjs 31337 0x5FbDB2315678afecb367f032d93F642f64180aa3`
-
-### Run Minting Script
-
-Mint locally
-
-`forge script script/Mint.s.sol:Anvil --fork-url=localhost -vv --broadcast`
-
-or mint on testnet
-
-`forge script script/Mint.s.sol:Goerli --fork-url=goerli -vv --broadcast`
-
-This script will iterate each line in `./src/assets/bytes32CIDs.txt` and mint a new token id for each NFT published on
-IPFS in the previous step.
+`ERC721Sovereign.sol: 0xbf9bC60DFBC46D8e9ca6504583330593f6dF8246`
 
 ## License
 
