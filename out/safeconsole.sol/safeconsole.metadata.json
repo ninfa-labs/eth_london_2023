@@ -1,0 +1,71 @@
+{
+  "compiler": {
+    "version": "0.8.22+commit.4fc1097e"
+  },
+  "language": "Solidity",
+  "output": {
+    "abi": [],
+    "devdoc": {
+      "author": "philogy <https://github.com/philogy>",
+      "details": "Code generated automatically by script.",
+      "kind": "dev",
+      "methods": {},
+      "version": 1
+    },
+    "userdoc": {
+      "kind": "user",
+      "methods": {},
+      "version": 1
+    }
+  },
+  "settings": {
+    "compilationTarget": {
+      "lib/forge-std/src/safeconsole.sol": "safeconsole"
+    },
+    "evmVersion": "paris",
+    "libraries": {},
+    "metadata": {
+      "appendCBOR": false,
+      "bytecodeHash": "none"
+    },
+    "optimizer": {
+      "details": {
+        "constantOptimizer": true,
+        "cse": true,
+        "deduplicate": true,
+        "inliner": true,
+        "jumpdestRemover": true,
+        "orderLiterals": true,
+        "peephole": true,
+        "simpleCounterForLoopUncheckedIncrement": true,
+        "yul": true,
+        "yulDetails": {
+          "optimizerSteps": "dhfoDgvulfnTUtnIf:fDnTOcmu",
+          "stackAllocation": true
+        }
+      },
+      "runs": 4194304
+    },
+    "remappings": [
+      ":ds-test/=lib/solmate/lib/ds-test/src/",
+      ":forge-std/=lib/forge-std/src/",
+      ":openzeppelin/=lib/openzeppelin-contracts/contracts/",
+      ":prb-test/=lib/prb-test/src/",
+      ":solmate/=lib/solmate/src/",
+      ":src/=contracts/",
+      ":test/=test/"
+    ],
+    "viaIR": true
+  },
+  "sources": {
+    "lib/forge-std/src/safeconsole.sol": {
+      "keccak256": "0xbaf41fdc6c54297e7cd8250e48b0f20eaac918e342a1028cef3f9a52ac086381",
+      "license": "MIT",
+      "urls": [
+        "bzz-raw://a500ad81dea226f9910e6b50f99a9ff930105e393a692cbfb2185e4cdb4424ae",
+        "dweb:/ipfs/QmVbUQpXNMmMWRiy4FvBNczzq46BMGfUoBikvSHNiCxVTq"
+      ]
+    }
+  },
+  "version": 1
+}

@@ -1,0 +1,170 @@
+{
+  "compiler": {
+    "version": "0.8.22+commit.4fc1097e"
+  },
+  "language": "Solidity",
+  "output": {
+    "abi": [
+      {
+        "inputs": [
+          {
+            "internalType": "uint256",
+            "name": "tokenId",
+            "type": "uint256"
+          }
+        ],
+        "name": "getRoyalties",
+        "outputs": [
+          {
+            "internalType": "address[]",
+            "name": "",
+            "type": "address[]"
+          },
+          {
+            "internalType": "uint256[]",
+            "name": "",
+            "type": "uint256[]"
+          }
+        ],
+        "stateMutability": "view",
+        "type": "function"
+      },
+      {
+        "inputs": [
+          {
+            "internalType": "uint256",
+            "name": "_tokenId",
+            "type": "uint256"
+          }
+        ],
+        "name": "isSecondaryMarket",
+        "outputs": [
+          {
+            "internalType": "bool",
+            "name": "",
+            "type": "bool"
+          }
+        ],
+        "stateMutability": "view",
+        "type": "function"
+      },
+      {
+        "inputs": [
+          {
+            "internalType": "uint256",
+            "name": "_tokenId",
+            "type": "uint256"
+          }
+        ],
+        "name": "ninfaRoyaltyInfo",
+        "outputs": [
+          {
+            "internalType": "address[]",
+            "name": "recipients",
+            "type": "address[]"
+          },
+          {
+            "internalType": "uint16[]",
+            "name": "bps",
+            "type": "uint16[]"
+          }
+        ],
+        "stateMutability": "nonpayable",
+        "type": "function"
+      },
+      {
+        "inputs": [
+          {
+            "internalType": "uint256",
+            "name": "_tokenId",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "_value",
+            "type": "uint256"
+          }
+        ],
+        "name": "royaltyInfo",
+        "outputs": [
+          {
+            "internalType": "address",
+            "name": "recipient",
+            "type": "address"
+          },
+          {
+            "internalType": "uint256",
+            "name": "value",
+            "type": "uint256"
+          }
+        ],
+        "stateMutability": "view",
+        "type": "function"
+      }
+    ],
+    "devdoc": {
+      "custom:security-contact": "tech@ninfa.io                    *",
+      "details": "Royalties BPS and recipient are token level        * and may be set by owner in child contract by writing      * directly to internal storage variables                    *                                                           *Royalty information can be specified globally for    * all token ids via {ERC2981-_setDefaultRoyalty}, and/or    * individually for specific token ids via                   * {ERC2981-_setTokenRoyalty}. The latter takes precedence.  *                                                           *",
+      "kind": "dev",
+      "methods": {},
+      "title": "ERC2981NSovereign                                   *                                                           *",
+      "version": 1
+    },
+    "userdoc": {
+      "kind": "user",
+      "methods": {},
+      "notice": "adds ERC2981 support to ERC-721.                  *                                                           *",
+      "version": 1
+    }
+  },
+  "settings": {
+    "compilationTarget": {
+      "contracts/token/common/ERC2981.sol": "ERC2981"
+    },
+    "evmVersion": "paris",
+    "libraries": {},
+    "metadata": {
+      "appendCBOR": false,
+      "bytecodeHash": "none"
+    },
+    "optimizer": {
+      "details": {
+        "constantOptimizer": true,
+        "cse": true,
+        "deduplicate": true,
+        "inliner": true,
+        "jumpdestRemover": true,
+        "orderLiterals": true,
+        "peephole": true,
+        "simpleCounterForLoopUncheckedIncrement": true,
+        "yul": true,
+        "yulDetails": {
+          "optimizerSteps": "dhfoDgvulfnTUtnIf:fDnTOcmu",
+          "stackAllocation": true
+        }
+      },
+      "runs": 4194304
+    },
+    "remappings": [
+      ":ds-test/=lib/solmate/lib/ds-test/src/",
+      ":forge-std/=lib/forge-std/src/",
+      ":openzeppelin/=lib/openzeppelin-contracts/contracts/",
+      ":prb-test/=lib/prb-test/src/",
+      ":solmate/=lib/solmate/src/",
+      ":src/=contracts/",
+      ":test/=test/"
+    ],
+    "viaIR": true
+  },
+  "sources": {
+    "contracts/token/common/ERC2981.sol": {
+      "keccak256": "0x6984aefb2ce8c5637f7cdf8a352a78f9f87ed9ded599187c4ece8ff34cc231a1",
+      "license": "MIT",
+      "urls": [
+        "bzz-raw://275d02a60d5e08f7e95c0d4cbd03fc23327cd1d391de4589cf25670fc671ed4f",
+        "dweb:/ipfs/QmdgCGFNk4CCiyBrVcoYms9KR443wDK5LC2YkJm77twNy8"
+      ]
+    }
+  },
+  "version": 1
+}

@@ -1,0 +1,70 @@
+{
+  "compiler": {
+    "version": "0.8.22+commit.4fc1097e"
+  },
+  "language": "Solidity",
+  "output": {
+    "abi": [],
+    "devdoc": {
+      "details": "Collection of functions related to the address type",
+      "kind": "dev",
+      "methods": {},
+      "version": 1
+    },
+    "userdoc": {
+      "kind": "user",
+      "methods": {},
+      "version": 1
+    }
+  },
+  "settings": {
+    "compilationTarget": {
+      "contracts/utils/Address.sol": "Address"
+    },
+    "evmVersion": "paris",
+    "libraries": {},
+    "metadata": {
+      "appendCBOR": false,
+      "bytecodeHash": "none"
+    },
+    "optimizer": {
+      "details": {
+        "constantOptimizer": true,
+        "cse": true,
+        "deduplicate": true,
+        "inliner": true,
+        "jumpdestRemover": true,
+        "orderLiterals": true,
+        "peephole": true,
+        "simpleCounterForLoopUncheckedIncrement": true,
+        "yul": true,
+        "yulDetails": {
+          "optimizerSteps": "dhfoDgvulfnTUtnIf:fDnTOcmu",
+          "stackAllocation": true
+        }
+      },
+      "runs": 4194304
+    },
+    "remappings": [
+      ":ds-test/=lib/solmate/lib/ds-test/src/",
+      ":forge-std/=lib/forge-std/src/",
+      ":openzeppelin/=lib/openzeppelin-contracts/contracts/",
+      ":prb-test/=lib/prb-test/src/",
+      ":solmate/=lib/solmate/src/",
+      ":src/=contracts/",
+      ":test/=test/"
+    ],
+    "viaIR": true
+  },
+  "sources": {
+    "contracts/utils/Address.sol": {
+      "keccak256": "0x8cd846c2836ec70de0117b60b99fab3057f6d52f69757c42ee247e5b70de9227",
+      "license": "MIT",
+      "urls": [
+        "bzz-raw://40d2ee6f3f83cea1b24f8d744b291bae16a16d1f14a0688c260df13bcd61938a",
+        "dweb:/ipfs/QmZqRgDrR6r8D3tghbtYJSD5uTgiQf6od3PTmnjAEwGNJe"
+      ]
+    }
+  },
+  "version": 1
+}

@@ -1,0 +1,299 @@
+{
+  "abi": [
+    {
+      "inputs": [
+        {
+          "internalType": "address",
+          "name": "tokenAddress",
+          "type": "address"
+        }
+      ],
+      "name": "getRoyaltyLookupAddress",
+      "outputs": [
+        {
+          "internalType": "address",
+          "name": "",
+          "type": "address"
+        }
+      ],
+      "stateMutability": "pure",
+      "type": "function"
+    }
+  ],
+  "bytecode": {
+    "object": "0x6080604052346100185760405160a461001e823960a490f35b600080fdfe60806040526004361015601157600080fd5b60003560e01c63de5488af146084575b600080fd5b90565b73ffffffffffffffffffffffffffffffffffffffff811603602157565b905035906051826029565b565b906020828203126021576026916046565b73ffffffffffffffffffffffffffffffffffffffff909116815260200190565b3460215760a0609560263660046053565b604051918291826064565b0390f3",
+    "sourceMap": "208:225:47:-:0;;;;;;;;;;;;;;;;;;",
+    "linkReferences": {}
+  },
+  "deployedBytecode": {
+    "object": "0x60806040526004361015601157600080fd5b60003560e01c63de5488af146084575b600080fd5b90565b73ffffffffffffffffffffffffffffffffffffffff811603602157565b905035906051826029565b565b906020828203126021576026916046565b73ffffffffffffffffffffffffffffffffffffffff909116815260200190565b3460215760a0609560263660046053565b604051918291826064565b0390f3",
+    "sourceMap": "208:225:47:-:0;;;;;;;;;;;;;;;;;;;;;;;;;;;:::o;:::-;;;;;;;:::o;:::-;;;;;;;;:::i;:::-;:::o;:::-;;;;;;;;;;;;:::i;:::-;;;;;;;;;;:::o;:::-;;;;;;;;;;:::i;:::-;;;;;;;;:::i;:::-;;;",
+    "linkReferences": {}
+  },
+  "methodIdentifiers": {
+    "getRoyaltyLookupAddress(address)": "de5488af"
+  },
+  "rawMetadata": "{\"compiler\":{\"version\":\"0.8.22+commit.4fc1097e\"},\"language\":\"Solidity\",\"output\":{\"abi\":[{\"inputs\":[{\"internalType\":\"address\",\"name\":\"tokenAddress\",\"type\":\"address\"}],\"name\":\"getRoyaltyLookupAddress\",\"outputs\":[{\"internalType\":\"address\",\"name\":\"\",\"type\":\"address\"}],\"stateMutability\":\"pure\",\"type\":\"function\"}],\"devdoc\":{\"details\":\"test implementation of RoyaltyRegistry. Only needed for unit tests, not to be deployed on mainnet-\",\"kind\":\"dev\",\"methods\":{\"getRoyaltyLookupAddress(address)\":{\"details\":\"See {IRegistry-getRoyaltyLookupAddress}.\"}},\"title\":\"mock RoyaltyRegistry.\",\"version\":1},\"userdoc\":{\"kind\":\"user\",\"methods\":{},\"version\":1}},\"settings\":{\"compilationTarget\":{\"test/mocks/RoyaltyRegistry.sol\":\"RoyaltyRegistry\"},\"evmVersion\":\"paris\",\"libraries\":{},\"metadata\":{\"appendCBOR\":false,\"bytecodeHash\":\"none\"},\"optimizer\":{\"details\":{\"constantOptimizer\":true,\"cse\":true,\"deduplicate\":true,\"inliner\":true,\"jumpdestRemover\":true,\"orderLiterals\":true,\"peephole\":true,\"simpleCounterForLoopUncheckedIncrement\":true,\"yul\":true,\"yulDetails\":{\"optimizerSteps\":\"dhfoDgvulfnTUtnIf:fDnTOcmu\",\"stackAllocation\":true}},\"runs\":4194304},\"remappings\":[\":ds-test/=lib/solmate/lib/ds-test/src/\",\":forge-std/=lib/forge-std/src/\",\":openzeppelin/=lib/openzeppelin-contracts/contracts/\",\":prb-test/=lib/prb-test/src/\",\":solmate/=lib/solmate/src/\",\":src/=contracts/\",\":test/=test/\"],\"viaIR\":true},\"sources\":{\"test/mocks/RoyaltyRegistry.sol\":{\"keccak256\":\"0xcc9630fedc3521d3611f59ec6b098bf7a756586304607fab4ecbad3f838195ac\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://74646bf46d8686988d69bda85afa1ae329f8a789847827f1b3a9ebdebf7cbe6b\",\"dweb:/ipfs/QmYoM66E5q4NURwHPvxmNhrCoKWkzDEjFhDZHuHwjEWj6v\"]}},\"version\":1}",
+  "metadata": {
+    "compiler": {
+      "version": "0.8.22+commit.4fc1097e"
+    },
+    "language": "Solidity",
+    "output": {
+      "abi": [
+        {
+          "inputs": [
+            {
+              "internalType": "address",
+              "name": "tokenAddress",
+              "type": "address"
+            }
+          ],
+          "stateMutability": "pure",
+          "type": "function",
+          "name": "getRoyaltyLookupAddress",
+          "outputs": [
+            {
+              "internalType": "address",
+              "name": "",
+              "type": "address"
+            }
+          ]
+        }
+      ],
+      "devdoc": {
+        "kind": "dev",
+        "methods": {
+          "getRoyaltyLookupAddress(address)": {
+            "details": "See {IRegistry-getRoyaltyLookupAddress}."
+          }
+        },
+        "version": 1
+      },
+      "userdoc": {
+        "kind": "user",
+        "methods": {},
+        "version": 1
+      }
+    },
+    "settings": {
+      "remappings": [
+        "ds-test/=lib/solmate/lib/ds-test/src/",
+        "forge-std/=lib/forge-std/src/",
+        "openzeppelin/=lib/openzeppelin-contracts/contracts/",
+        "prb-test/=lib/prb-test/src/",
+        "solmate/=lib/solmate/src/",
+        "src/=contracts/",
+        "test/=test/"
+      ],
+      "optimizer": {
+        "runs": 4194304,
+        "details": {
+          "peephole": true,
+          "inliner": true,
+          "jumpdestRemover": true,
+          "orderLiterals": true,
+          "deduplicate": true,
+          "cse": true,
+          "constantOptimizer": true,
+          "yul": true,
+          "yulDetails": {
+            "stackAllocation": true,
+            "optimizerSteps": "dhfoDgvulfnTUtnIf:fDnTOcmu"
+          }
+        }
+      },
+      "metadata": {
+        "bytecodeHash": "none",
+        "appendCBOR": false
+      },
+      "compilationTarget": {
+        "test/mocks/RoyaltyRegistry.sol": "RoyaltyRegistry"
+      },
+      "libraries": {},
+      "viaIR": true
+    },
+    "sources": {
+      "test/mocks/RoyaltyRegistry.sol": {
+        "keccak256": "0xcc9630fedc3521d3611f59ec6b098bf7a756586304607fab4ecbad3f838195ac",
+        "urls": [
+          "bzz-raw://74646bf46d8686988d69bda85afa1ae329f8a789847827f1b3a9ebdebf7cbe6b",
+          "dweb:/ipfs/QmYoM66E5q4NURwHPvxmNhrCoKWkzDEjFhDZHuHwjEWj6v"
+        ],
+        "license": "MIT"
+      }
+    },
+    "version": 1
+  },
+  "ast": {
+    "absolutePath": "test/mocks/RoyaltyRegistry.sol",
+    "id": 51556,
+    "exportedSymbols": {
+      "RoyaltyRegistry": [
+        51555
+      ]
+    },
+    "nodeType": "SourceUnit",
+    "src": "33:401:47",
+    "nodes": [
+      {
+        "id": 51542,
+        "nodeType": "PragmaDirective",
+        "src": "33:23:47",
+        "nodes": [],
+        "literals": [
+          "solidity",
+          "0.8",
+          ".22"
+        ]
+      },
+      {
+        "id": 51555,
+        "nodeType": "ContractDefinition",
+        "src": "208:225:47",
+        "nodes": [
+          {
+            "id": 51554,
+            "nodeType": "FunctionDefinition",
+            "src": "308:123:47",
+            "nodes": [],
+            "body": {
+              "id": 51553,
+              "nodeType": "Block",
+              "src": "395:36:47",
+              "nodes": [],
+              "statements": [
+                {
+                  "expression": {
+                    "id": 51551,
+                    "name": "tokenAddress",
+                    "nodeType": "Identifier",
+                    "overloadedDeclarations": [],
+                    "referencedDeclaration": 51546,
+                    "src": "412:12:47",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_address",
+                      "typeString": "address"
+                    }
+                  },
+                  "functionReturnParameters": 51550,
+                  "id": 51552,
+                  "nodeType": "Return",
+                  "src": "405:19:47"
+                }
+              ]
+            },
+            "documentation": {
+              "id": 51544,
+              "nodeType": "StructuredDocumentation",
+              "src": "239:64:47",
+              "text": " @dev See {IRegistry-getRoyaltyLookupAddress}."
+            },
+            "functionSelector": "de5488af",
+            "implemented": true,
+            "kind": "function",
+            "modifiers": [],
+            "name": "getRoyaltyLookupAddress",
+            "nameLocation": "317:23:47",
+            "parameters": {
+              "id": 51547,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 51546,
+                  "mutability": "mutable",
+                  "name": "tokenAddress",
+                  "nameLocation": "349:12:47",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 51554,
+                  "src": "341:20:47",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_address",
+                    "typeString": "address"
+                  },
+                  "typeName": {
+                    "id": 51545,
+                    "name": "address",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "341:7:47",
+                    "stateMutability": "nonpayable",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_address",
+                      "typeString": "address"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "340:22:47"
+            },
+            "returnParameters": {
+              "id": 51550,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 51549,
+                  "mutability": "mutable",
+                  "name": "",
+                  "nameLocation": "-1:-1:-1",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 51554,
+                  "src": "386:7:47",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_address",
+                    "typeString": "address"
+                  },
+                  "typeName": {
+                    "id": 51548,
+                    "name": "address",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "386:7:47",
+                    "stateMutability": "nonpayable",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_address",
+                      "typeString": "address"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "385:9:47"
+            },
+            "scope": 51555,
+            "stateMutability": "pure",
+            "virtual": false,
+            "visibility": "external"
+          }
+        ],
+        "abstract": false,
+        "baseContracts": [],
+        "canonicalName": "RoyaltyRegistry",
+        "contractDependencies": [],
+        "contractKind": "contract",
+        "documentation": {
+          "id": 51543,
+          "nodeType": "StructuredDocumentation",
+          "src": "58:149:47",
+          "text": " @title mock RoyaltyRegistry.\n @dev test implementation of RoyaltyRegistry. Only needed for unit tests, not\n to be deployed on mainnet-"
+        },
+        "fullyImplemented": true,
+        "linearizedBaseContracts": [
+          51555
+        ],
+        "name": "RoyaltyRegistry",
+        "nameLocation": "217:15:47",
+        "scope": 51556,
+        "usedErrors": [],
+        "usedEvents": []
+      }
+    ],
+    "license": "MIT"
+  },
+  "id": 47
+}

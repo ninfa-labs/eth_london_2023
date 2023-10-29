@@ -1,46 +1,86 @@
-# Getting Started with Create React App
+# Social Login + MPC wallet + Account Abstracion
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Setup
 
-## Available Scripts
+### Install Node Modules
 
-In the project directory, you can run:
+`pnpm i`
 
-### `npm start`
+### Foundry Installation
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+[Install Foundry Docs](https://book.getfoundry.sh/getting-started/installation)
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+### Install smart contract libraries
 
-### `npm test`
+`forge install`
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+### Compile Contracts
 
-### `npm run build`
+'forge build'
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+### Create .env
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+Register an infura account and create an IPFS project. Register a development account with Lit to get your API key,
+otherwise try with "1234567890", or search for existing API keys hardcoded in some of https://github.com/LIT-Protocol/
+example apps ;)
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+```
+# Private Keys
+ANVIL_ACCOUNT_0_PK="0xac0974bec39a17e36ba4a6b4d238ff944bacb478cbed5efcae784d7bf4f2ff80"
+ANVIL_MNEMONIC="test test test test test test test test test test test junk"
+# API KEYS
+INFURA_IPFS_PROJECT_ID="<your_project_id>"
+INFURA_IPFS_PROJECT_SECRET="<your_project_secret>"
+INFURA_API_KEY="
+LIT_API_KEY="1234567890"
+```
 
-### `npm run eject`
+### Run Anvil
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+In a new terminal start the development blockchain
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+`anvil`
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+### Run Deployment Script
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+`forge script script/DeployERC721.s.sol:Anvil --fork-url=localhost -vv --broadcast`
 
-## Learn More
+or
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+`forge script script/DeployERC721.s.sol:Goerli --fork-url=goerli -vv --broadcast`
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+### Run IPFS script
+
+Run the node script providing as arguments the chain id (31337 for anvil, 5 for Goerli, etc) and the ERC721 contract
+address, found in `./broadcast/DeployERC721.s.sol/<chainId>/run-latest.json` under `transactions[0].contractAddress`
+
+`node src/utils/ipfs.mjs <chainId> <deployed_contract_address>`
+
+When using Anvil the contract address will always be the same, as long as the deployment script is run on a fresh Anvil
+instance, i.e. the CREATE tx is the first on the local blockchain and the deployer is account[0]
+
+`node src/utils/ipfs.mjs 31337 0x5FbDB2315678afecb367f032d93F642f64180aa3`
+
+The script reads images already contained in `./src/assets/gallery/*` and for each of them generates a metadata file and
+uploads it on IPFS, then creates `./src/assets/nftsData.js` and populates it with useful data about each NFT, this file
+acts as a fake backend for demo purposes. It also creates `./src/assets/bytes32CIDs.txt` containing the metadata IPFS
+CIDv1 converted to bytes32, used by the minting script next.
+
+### Run Deployment Script
+
+`forge script script/Mint.s.sol:Anvil --fork-url=localhost -vv --broadcast`
+
+or
+
+`forge script script/Mint.s.sol:Goerli --fork-url=goerli -vv --broadcast`
+
+This script will iterate each line in `./src/assets/bytes32CIDs.txt` and mint a new token id for each NFT published on
+IPFS in the previous step.
+
+### Get a Google API Key
+
+used for social login // TODO
+
+### Start Vite
+
+`vite`

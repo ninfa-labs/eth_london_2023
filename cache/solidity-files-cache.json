@@ -1,0 +1,2675 @@
+{
+  "_format": "ethers-rs-sol-cache-3",
+  "paths": {
+    "artifacts": "out",
+    "build_infos": "out/build-info",
+    "sources": "src",
+    "tests": "test",
+    "scripts": "script",
+    "libraries": [
+      "lib"
+    ]
+  },
+  "files": {
+    "contracts/access/AccessControl.sol": {
+      "lastModificationDate": 1698397757097,
+      "contentHash": "51ed6c84e617dbef7743ca4274c01f8b",
+      "sourceName": "contracts/access/AccessControl.sol",
+      "solcConfig": {
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 4194304,
+            "details": {
+              "constantOptimizer": true,
+              "yul": true,
+              "yulDetails": {
+                "stackAllocation": true,
+                "optimizerSteps": "dhfoDgvulfnTUtnIf"
+              }
+            }
+          },
+          "metadata": {
+            "useLiteralContent": false,
+            "bytecodeHash": "none",
+            "appendCBOR": false
+          },
+          "outputSelection": {
+            "*": {
+              "": [
+                "ast"
+              ],
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ]
+            }
+          },
+          "evmVersion": "paris",
+          "viaIR": true,
+          "libraries": {}
+        }
+      },
+      "imports": [],
+      "versionRequirement": "=0.8.22",
+      "artifacts": {
+        "AccessControl": {
+          "0.8.22+commit.4fc1097e.Linux.gcc": "AccessControl.sol/AccessControl.json"
+        }
+      }
+    },
+    "contracts/factory/CuratedFactory.sol": {
+      "lastModificationDate": 1698397757097,
+      "contentHash": "fa5754fb3210408e56df3dbf22a3eab1",
+      "sourceName": "contracts/factory/CuratedFactory.sol",
+      "solcConfig": {
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 4194304,
+            "details": {
+              "constantOptimizer": true,
+              "yul": true,
+              "yulDetails": {
+                "stackAllocation": true,
+                "optimizerSteps": "dhfoDgvulfnTUtnIf"
+              }
+            }
+          },
+          "metadata": {
+            "useLiteralContent": false,
+            "bytecodeHash": "none",
+            "appendCBOR": false
+          },
+          "outputSelection": {
+            "*": {
+              "": [
+                "ast"
+              ],
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ]
+            }
+          },
+          "evmVersion": "paris",
+          "viaIR": true,
+          "libraries": {}
+        }
+      },
+      "imports": [
+        "contracts/access/AccessControl.sol",
+        "contracts/proxy/Clones.sol"
+      ],
+      "versionRequirement": "=0.8.22",
+      "artifacts": {
+        "CuratedFactory": {
+          "0.8.22+commit.4fc1097e.Linux.gcc": "CuratedFactory.sol/CuratedFactory.json"
+        }
+      }
+    },
+    "contracts/proxy/Clones.sol": {
+      "lastModificationDate": 1698397757097,
+      "contentHash": "415b44e350c5d7986e73a6be164b8464",
+      "sourceName": "contracts/proxy/Clones.sol",
+      "solcConfig": {
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 4194304,
+            "details": {
+              "constantOptimizer": true,
+              "yul": true,
+              "yulDetails": {
+                "stackAllocation": true,
+                "optimizerSteps": "dhfoDgvulfnTUtnIf"
+              }
+            }
+          },
+          "metadata": {
+            "useLiteralContent": false,
+            "bytecodeHash": "none",
+            "appendCBOR": false
+          },
+          "outputSelection": {
+            "*": {
+              "": [
+                "ast"
+              ],
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ]
+            }
+          },
+          "evmVersion": "paris",
+          "viaIR": true,
+          "libraries": {}
+        }
+      },
+      "imports": [],
+      "versionRequirement": "=0.8.22",
+      "artifacts": {
+        "Clones": {
+          "0.8.22+commit.4fc1097e.Linux.gcc": "Clones.sol/Clones.json"
+        }
+      }
+    },
+    "contracts/token/ERC721/ERC721.sol": {
+      "lastModificationDate": 1698397757097,
+      "contentHash": "86fd0316581f56eb679fa2136cfefeaf",
+      "sourceName": "contracts/token/ERC721/ERC721.sol",
+      "solcConfig": {
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 4194304,
+            "details": {
+              "constantOptimizer": true,
+              "yul": true,
+              "yulDetails": {
+                "stackAllocation": true,
+                "optimizerSteps": "dhfoDgvulfnTUtnIf"
+              }
+            }
+          },
+          "metadata": {
+            "useLiteralContent": false,
+            "bytecodeHash": "none",
+            "appendCBOR": false
+          },
+          "outputSelection": {
+            "*": {
+              "": [
+                "ast"
+              ],
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ]
+            }
+          },
+          "evmVersion": "paris",
+          "viaIR": true,
+          "libraries": {}
+        }
+      },
+      "imports": [
+        "contracts/token/ERC721/IERC721Receiver.sol"
+      ],
+      "versionRequirement": "=0.8.22",
+      "artifacts": {
+        "ERC721": {
+          "0.8.22+commit.4fc1097e.Linux.gcc": "ERC721.sol/ERC721.json"
+        }
+      }
+    },
+    "contracts/token/ERC721/IERC721Receiver.sol": {
+      "lastModificationDate": 1698397757097,
+      "contentHash": "e62aceff62b8f5eaabb85dc24aff87cd",
+      "sourceName": "contracts/token/ERC721/IERC721Receiver.sol",
+      "solcConfig": {
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 4194304,
+            "details": {
+              "constantOptimizer": true,
+              "yul": true,
+              "yulDetails": {
+                "stackAllocation": true,
+                "optimizerSteps": "dhfoDgvulfnTUtnIf"
+              }
+            }
+          },
+          "metadata": {
+            "useLiteralContent": false,
+            "bytecodeHash": "none",
+            "appendCBOR": false
+          },
+          "outputSelection": {
+            "*": {
+              "": [
+                "ast"
+              ],
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ]
+            }
+          },
+          "evmVersion": "paris",
+          "viaIR": true,
+          "libraries": {}
+        }
+      },
+      "imports": [],
+      "versionRequirement": "=0.8.22",
+      "artifacts": {
+        "IERC721Receiver": {
+          "0.8.22+commit.4fc1097e.Linux.gcc": "IERC721Receiver.sol/IERC721Receiver.json"
+        }
+      }
+    },
+    "contracts/token/ERC721/extensions/ERC721Burnable.sol": {
+      "lastModificationDate": 1698397757101,
+      "contentHash": "2e771cbdd68618705d72bcfa807afe1c",
+      "sourceName": "contracts/token/ERC721/extensions/ERC721Burnable.sol",
+      "solcConfig": {
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 4194304,
+            "details": {
+              "constantOptimizer": true,
+              "yul": true,
+              "yulDetails": {
+                "stackAllocation": true,
+                "optimizerSteps": "dhfoDgvulfnTUtnIf"
+              }
+            }
+          },
+          "metadata": {
+            "useLiteralContent": false,
+            "bytecodeHash": "none",
+            "appendCBOR": false
+          },
+          "outputSelection": {
+            "*": {
+              "": [
+                "ast"
+              ],
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ]
+            }
+          },
+          "evmVersion": "paris",
+          "viaIR": true,
+          "libraries": {}
+        }
+      },
+      "imports": [
+        "contracts/token/ERC721/ERC721.sol",
+        "contracts/token/ERC721/IERC721Receiver.sol"
+      ],
+      "versionRequirement": "=0.8.22",
+      "artifacts": {
+        "ERC721Burnable": {
+          "0.8.22+commit.4fc1097e.Linux.gcc": "ERC721Burnable.sol/ERC721Burnable.json"
+        }
+      }
+    },
+    "contracts/token/ERC721/extensions/ERC721Enumerable.sol": {
+      "lastModificationDate": 1698397757101,
+      "contentHash": "104b8f7a85633f033df5277457a9c549",
+      "sourceName": "contracts/token/ERC721/extensions/ERC721Enumerable.sol",
+      "solcConfig": {
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 4194304,
+            "details": {
+              "constantOptimizer": true,
+              "yul": true,
+              "yulDetails": {
+                "stackAllocation": true,
+                "optimizerSteps": "dhfoDgvulfnTUtnIf"
+              }
+            }
+          },
+          "metadata": {
+            "useLiteralContent": false,
+            "bytecodeHash": "none",
+            "appendCBOR": false
+          },
+          "outputSelection": {
+            "*": {
+              "": [
+                "ast"
+              ],
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ]
+            }
+          },
+          "evmVersion": "paris",
+          "viaIR": true,
+          "libraries": {}
+        }
+      },
+      "imports": [
+        "contracts/token/ERC721/ERC721.sol",
+        "contracts/token/ERC721/IERC721Receiver.sol"
+      ],
+      "versionRequirement": "=0.8.22",
+      "artifacts": {
+        "ERC721Enumerable": {
+          "0.8.22+commit.4fc1097e.Linux.gcc": "ERC721Enumerable.sol/ERC721Enumerable.json"
+        }
+      }
+    },
+    "contracts/token/ERC721/extensions/ERC721Metadata_URI.sol": {
+      "lastModificationDate": 1698397757101,
+      "contentHash": "a585f1919670260350d14a1a22485ed7",
+      "sourceName": "contracts/token/ERC721/extensions/ERC721Metadata_URI.sol",
+      "solcConfig": {
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 4194304,
+            "details": {
+              "constantOptimizer": true,
+              "yul": true,
+              "yulDetails": {
+                "stackAllocation": true,
+                "optimizerSteps": "dhfoDgvulfnTUtnIf"
+              }
+            }
+          },
+          "metadata": {
+            "useLiteralContent": false,
+            "bytecodeHash": "none",
+            "appendCBOR": false
+          },
+          "outputSelection": {
+            "*": {
+              "": [
+                "ast"
+              ],
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ]
+            }
+          },
+          "evmVersion": "paris",
+          "viaIR": true,
+          "libraries": {}
+        }
+      },
+      "imports": [
+        "contracts/token/ERC721/ERC721.sol",
+        "contracts/token/ERC721/IERC721Receiver.sol",
+        "contracts/token/common/DecodeTokenURI.sol"
+      ],
+      "versionRequirement": "=0.8.22",
+      "artifacts": {
+        "ERC721Metadata_URI": {
+          "0.8.22+commit.4fc1097e.Linux.gcc": "ERC721Metadata_URI.sol/ERC721Metadata_URI.json"
+        }
+      }
+    },
+    "contracts/token/ERC721/extensions/ERC721Royalties.sol": {
+      "lastModificationDate": 1698397757101,
+      "contentHash": "f59382eccbfab9b7e3fc9e74e5e23fa0",
+      "sourceName": "contracts/token/ERC721/extensions/ERC721Royalties.sol",
+      "solcConfig": {
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 4194304,
+            "details": {
+              "constantOptimizer": true,
+              "yul": true,
+              "yulDetails": {
+                "stackAllocation": true,
+                "optimizerSteps": "dhfoDgvulfnTUtnIf"
+              }
+            }
+          },
+          "metadata": {
+            "useLiteralContent": false,
+            "bytecodeHash": "none",
+            "appendCBOR": false
+          },
+          "outputSelection": {
+            "*": {
+              "": [
+                "ast"
+              ],
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ]
+            }
+          },
+          "evmVersion": "paris",
+          "viaIR": true,
+          "libraries": {}
+        }
+      },
+      "imports": [
+        "contracts/token/ERC721/ERC721.sol",
+        "contracts/token/ERC721/IERC721Receiver.sol",
+        "contracts/token/common/ERC2981.sol"
+      ],
+      "versionRequirement": "=0.8.22",
+      "artifacts": {
+        "ERC721Royalties": {
+          "0.8.22+commit.4fc1097e.Linux.gcc": "ERC721Royalties.sol/ERC721Royalties.json"
+        }
+      }
+    },
+    "contracts/token/ERC721/presets/ERC721Sovereign.sol": {
+      "lastModificationDate": 1698397757101,
+      "contentHash": "8857f8edb42771a2c0759d4612d351bf",
+      "sourceName": "contracts/token/ERC721/presets/ERC721Sovereign.sol",
+      "solcConfig": {
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 4194304,
+            "details": {
+              "constantOptimizer": true,
+              "yul": true,
+              "yulDetails": {
+                "stackAllocation": true,
+                "optimizerSteps": "dhfoDgvulfnTUtnIf"
+              }
+            }
+          },
+          "metadata": {
+            "useLiteralContent": false,
+            "bytecodeHash": "none",
+            "appendCBOR": false
+          },
+          "outputSelection": {
+            "*": {
+              "": [
+                "ast"
+              ],
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ]
+            }
+          },
+          "evmVersion": "paris",
+          "viaIR": true,
+          "libraries": {}
+        }
+      },
+      "imports": [
+        "contracts/access/AccessControl.sol",
+        "contracts/token/ERC721/ERC721.sol",
+        "contracts/token/ERC721/IERC721Receiver.sol",
+        "contracts/token/ERC721/extensions/ERC721Burnable.sol",
+        "contracts/token/ERC721/extensions/ERC721Enumerable.sol",
+        "contracts/token/ERC721/extensions/ERC721Metadata_URI.sol",
+        "contracts/token/ERC721/extensions/ERC721Royalties.sol",
+        "contracts/token/common/DecodeTokenURI.sol",
+        "contracts/token/common/ERC2981.sol",
+        "contracts/token/common/ERC712.sol",
+        "contracts/utils/Address.sol",
+        "contracts/utils/cryptography/ECDSA.sol",
+        "contracts/utils/cryptography/SignatureChecker.sol"
+      ],
+      "versionRequirement": "=0.8.22",
+      "artifacts": {
+        "ERC721Sovereign": {
+          "0.8.22+commit.4fc1097e.Linux.gcc": "ERC721Sovereign.sol/ERC721Sovereign.json"
+        }
+      }
+    },
+    "contracts/token/common/DecodeTokenURI.sol": {
+      "lastModificationDate": 1698397757101,
+      "contentHash": "f59b68ff36322e96259fd1b9db348eb7",
+      "sourceName": "contracts/token/common/DecodeTokenURI.sol",
+      "solcConfig": {
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 4194304,
+            "details": {
+              "constantOptimizer": true,
+              "yul": true,
+              "yulDetails": {
+                "stackAllocation": true,
+                "optimizerSteps": "dhfoDgvulfnTUtnIf"
+              }
+            }
+          },
+          "metadata": {
+            "useLiteralContent": false,
+            "bytecodeHash": "none",
+            "appendCBOR": false
+          },
+          "outputSelection": {
+            "*": {
+              "": [
+                "ast"
+              ],
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ]
+            }
+          },
+          "evmVersion": "paris",
+          "viaIR": true,
+          "libraries": {}
+        }
+      },
+      "imports": [],
+      "versionRequirement": "=0.8.22",
+      "artifacts": {
+        "DecodeTokenURI": {
+          "0.8.22+commit.4fc1097e.Linux.gcc": "DecodeTokenURI.sol/DecodeTokenURI.json"
+        }
+      }
+    },
+    "contracts/token/common/ERC2981.sol": {
+      "lastModificationDate": 1698397757101,
+      "contentHash": "e04aa476fc83968b1354b9490737ef92",
+      "sourceName": "contracts/token/common/ERC2981.sol",
+      "solcConfig": {
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 4194304,
+            "details": {
+              "constantOptimizer": true,
+              "yul": true,
+              "yulDetails": {
+                "stackAllocation": true,
+                "optimizerSteps": "dhfoDgvulfnTUtnIf"
+              }
+            }
+          },
+          "metadata": {
+            "useLiteralContent": false,
+            "bytecodeHash": "none",
+            "appendCBOR": false
+          },
+          "outputSelection": {
+            "*": {
+              "": [
+                "ast"
+              ],
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ]
+            }
+          },
+          "evmVersion": "paris",
+          "viaIR": true,
+          "libraries": {}
+        }
+      },
+      "imports": [],
+      "versionRequirement": "=0.8.22",
+      "artifacts": {
+        "ERC2981": {
+          "0.8.22+commit.4fc1097e.Linux.gcc": "ERC2981.sol/ERC2981.json"
+        }
+      }
+    },
+    "contracts/token/common/ERC712.sol": {
+      "lastModificationDate": 1698397757101,
+      "contentHash": "8b42133f807d3376054bb7c18dcd8d7d",
+      "sourceName": "contracts/token/common/ERC712.sol",
+      "solcConfig": {
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 4194304,
+            "details": {
+              "constantOptimizer": true,
+              "yul": true,
+              "yulDetails": {
+                "stackAllocation": true,
+                "optimizerSteps": "dhfoDgvulfnTUtnIf"
+              }
+            }
+          },
+          "metadata": {
+            "useLiteralContent": false,
+            "bytecodeHash": "none",
+            "appendCBOR": false
+          },
+          "outputSelection": {
+            "*": {
+              "": [
+                "ast"
+              ],
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ]
+            }
+          },
+          "evmVersion": "paris",
+          "viaIR": true,
+          "libraries": {}
+        }
+      },
+      "imports": [
+        "contracts/utils/Address.sol"
+      ],
+      "versionRequirement": "=0.8.22",
+      "artifacts": {
+        "ERC712": {
+          "0.8.22+commit.4fc1097e.Linux.gcc": "ERC712.sol/ERC712.json"
+        },
+        "EncodeType": {
+          "0.8.22+commit.4fc1097e.Linux.gcc": "ERC712.sol/EncodeType.json"
+        }
+      }
+    },
+    "contracts/utils/Address.sol": {
+      "lastModificationDate": 1698397757101,
+      "contentHash": "c0f96720bd041317165572bbede37427",
+      "sourceName": "contracts/utils/Address.sol",
+      "solcConfig": {
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 4194304,
+            "details": {
+              "constantOptimizer": true,
+              "yul": true,
+              "yulDetails": {
+                "stackAllocation": true,
+                "optimizerSteps": "dhfoDgvulfnTUtnIf"
+              }
+            }
+          },
+          "metadata": {
+            "useLiteralContent": false,
+            "bytecodeHash": "none",
+            "appendCBOR": false
+          },
+          "outputSelection": {
+            "*": {
+              "": [
+                "ast"
+              ],
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ]
+            }
+          },
+          "evmVersion": "paris",
+          "viaIR": true,
+          "libraries": {}
+        }
+      },
+      "imports": [],
+      "versionRequirement": "=0.8.22",
+      "artifacts": {
+        "Address": {
+          "0.8.22+commit.4fc1097e.Linux.gcc": "Address.sol/Address.json"
+        }
+      }
+    },
+    "contracts/utils/cryptography/ECDSA.sol": {
+      "lastModificationDate": 1698397757101,
+      "contentHash": "6b521ba6b36f3ffc2ecb47a671e8cdc4",
+      "sourceName": "contracts/utils/cryptography/ECDSA.sol",
+      "solcConfig": {
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 4194304,
+            "details": {
+              "constantOptimizer": true,
+              "yul": true,
+              "yulDetails": {
+                "stackAllocation": true,
+                "optimizerSteps": "dhfoDgvulfnTUtnIf"
+              }
+            }
+          },
+          "metadata": {
+            "useLiteralContent": false,
+            "bytecodeHash": "none",
+            "appendCBOR": false
+          },
+          "outputSelection": {
+            "*": {
+              "": [
+                "ast"
+              ],
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ]
+            }
+          },
+          "evmVersion": "paris",
+          "viaIR": true,
+          "libraries": {}
+        }
+      },
+      "imports": [],
+      "versionRequirement": "=0.8.22",
+      "artifacts": {
+        "ECDSA": {
+          "0.8.22+commit.4fc1097e.Linux.gcc": "ECDSA.sol/ECDSA.json"
+        }
+      }
+    },
+    "contracts/utils/cryptography/SignatureChecker.sol": {
+      "lastModificationDate": 1698397757101,
+      "contentHash": "f586a9866ce45f3c020ba547d05d367a",
+      "sourceName": "contracts/utils/cryptography/SignatureChecker.sol",
+      "solcConfig": {
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 4194304,
+            "details": {
+              "constantOptimizer": true,
+              "yul": true,
+              "yulDetails": {
+                "stackAllocation": true,
+                "optimizerSteps": "dhfoDgvulfnTUtnIf"
+              }
+            }
+          },
+          "metadata": {
+            "useLiteralContent": false,
+            "bytecodeHash": "none",
+            "appendCBOR": false
+          },
+          "outputSelection": {
+            "*": {
+              "": [
+                "ast"
+              ],
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ]
+            }
+          },
+          "evmVersion": "paris",
+          "viaIR": true,
+          "libraries": {}
+        }
+      },
+      "imports": [],
+      "versionRequirement": "=0.8.22",
+      "artifacts": {
+        "SignatureChecker": {
+          "0.8.22+commit.4fc1097e.Linux.gcc": "SignatureChecker.sol/SignatureChecker.json"
+        }
+      }
+    },
+    "lib/forge-std/src/Base.sol": {
+      "lastModificationDate": 1698399640470,
+      "contentHash": "ee13c050b1914464f1d3f90cde90204b",
+      "sourceName": "lib/forge-std/src/Base.sol",
+      "solcConfig": {
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 4194304,
+            "details": {
+              "constantOptimizer": true,
+              "yul": true,
+              "yulDetails": {
+                "stackAllocation": true,
+                "optimizerSteps": "dhfoDgvulfnTUtnIf"
+              }
+            }
+          },
+          "metadata": {
+            "useLiteralContent": false,
+            "bytecodeHash": "none",
+            "appendCBOR": false
+          },
+          "outputSelection": {
+            "*": {
+              "": [
+                "ast"
+              ],
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ]
+            }
+          },
+          "evmVersion": "paris",
+          "viaIR": true,
+          "libraries": {}
+        }
+      },
+      "imports": [
+        "lib/forge-std/src/StdStorage.sol",
+        "lib/forge-std/src/Vm.sol"
+      ],
+      "versionRequirement": ">=0.6.2, <0.9.0",
+      "artifacts": {
+        "CommonBase": {
+          "0.8.22+commit.4fc1097e.Linux.gcc": "Base.sol/CommonBase.json"
+        },
+        "ScriptBase": {
+          "0.8.22+commit.4fc1097e.Linux.gcc": "Base.sol/ScriptBase.json"
+        },
+        "TestBase": {
+          "0.8.22+commit.4fc1097e.Linux.gcc": "Base.sol/TestBase.json"
+        }
+      }
+    },
+    "lib/forge-std/src/Script.sol": {
+      "lastModificationDate": 1698399640470,
+      "contentHash": "ba325c778a7da8a21c2136aa32763c14",
+      "sourceName": "lib/forge-std/src/Script.sol",
+      "solcConfig": {
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 4194304,
+            "details": {
+              "constantOptimizer": true,
+              "yul": true,
+              "yulDetails": {
+                "stackAllocation": true,
+                "optimizerSteps": "dhfoDgvulfnTUtnIf"
+              }
+            }
+          },
+          "metadata": {
+            "useLiteralContent": false,
+            "bytecodeHash": "none",
+            "appendCBOR": false
+          },
+          "outputSelection": {
+            "*": {
+              "": [
+                "ast"
+              ],
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ]
+            }
+          },
+          "evmVersion": "paris",
+          "viaIR": true,
+          "libraries": {}
+        }
+      },
+      "imports": [
+        "lib/forge-std/src/Base.sol",
+        "lib/forge-std/src/StdChains.sol",
+        "lib/forge-std/src/StdCheats.sol",
+        "lib/forge-std/src/StdJson.sol",
+        "lib/forge-std/src/StdMath.sol",
+        "lib/forge-std/src/StdStorage.sol",
+        "lib/forge-std/src/StdStyle.sol",
+        "lib/forge-std/src/StdUtils.sol",
+        "lib/forge-std/src/Vm.sol",
+        "lib/forge-std/src/console.sol",
+        "lib/forge-std/src/console2.sol",
+        "lib/forge-std/src/interfaces/IMulticall3.sol",
+        "lib/forge-std/src/safeconsole.sol"
+      ],
+      "versionRequirement": ">=0.6.2, <0.9.0",
+      "artifacts": {
+        "Script": {
+          "0.8.22+commit.4fc1097e.Linux.gcc": "Script.sol/Script.json"
+        }
+      }
+    },
+    "lib/forge-std/src/StdAssertions.sol": {
+      "lastModificationDate": 1698399640470,
+      "contentHash": "6cc2858240bcd443debbbf075490e325",
+      "sourceName": "lib/forge-std/src/StdAssertions.sol",
+      "solcConfig": {
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 4194304,
+            "details": {
+              "constantOptimizer": true,
+              "yul": true,
+              "yulDetails": {
+                "stackAllocation": true,
+                "optimizerSteps": "dhfoDgvulfnTUtnIf"
+              }
+            }
+          },
+          "metadata": {
+            "useLiteralContent": false,
+            "bytecodeHash": "none",
+            "appendCBOR": false
+          },
+          "outputSelection": {
+            "*": {
+              "": [
+                "ast"
+              ],
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ]
+            }
+          },
+          "evmVersion": "paris",
+          "viaIR": true,
+          "libraries": {}
+        }
+      },
+      "imports": [
+        "lib/forge-std/src/StdMath.sol",
+        "lib/solmate/lib/ds-test/src/test.sol"
+      ],
+      "versionRequirement": ">=0.6.2, <0.9.0",
+      "artifacts": {
+        "StdAssertions": {
+          "0.8.22+commit.4fc1097e.Linux.gcc": "StdAssertions.sol/StdAssertions.json"
+        }
+      }
+    },
+    "lib/forge-std/src/StdChains.sol": {
+      "lastModificationDate": 1698399640470,
+      "contentHash": "b0324b2e5a11948f852032aa293b3a05",
+      "sourceName": "lib/forge-std/src/StdChains.sol",
+      "solcConfig": {
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 4194304,
+            "details": {
+              "constantOptimizer": true,
+              "yul": true,
+              "yulDetails": {
+                "stackAllocation": true,
+                "optimizerSteps": "dhfoDgvulfnTUtnIf"
+              }
+            }
+          },
+          "metadata": {
+            "useLiteralContent": false,
+            "bytecodeHash": "none",
+            "appendCBOR": false
+          },
+          "outputSelection": {
+            "*": {
+              "": [
+                "ast"
+              ],
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ]
+            }
+          },
+          "evmVersion": "paris",
+          "viaIR": true,
+          "libraries": {}
+        }
+      },
+      "imports": [
+        "lib/forge-std/src/Vm.sol"
+      ],
+      "versionRequirement": ">=0.6.2, <0.9.0",
+      "artifacts": {
+        "StdChains": {
+          "0.8.22+commit.4fc1097e.Linux.gcc": "StdChains.sol/StdChains.json"
+        }
+      }
+    },
+    "lib/forge-std/src/StdCheats.sol": {
+      "lastModificationDate": 1698399640470,
+      "contentHash": "d984e2c76dae07bac1e292af2a5d4fd1",
+      "sourceName": "lib/forge-std/src/StdCheats.sol",
+      "solcConfig": {
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 4194304,
+            "details": {
+              "constantOptimizer": true,
+              "yul": true,
+              "yulDetails": {
+                "stackAllocation": true,
+                "optimizerSteps": "dhfoDgvulfnTUtnIf"
+              }
+            }
+          },
+          "metadata": {
+            "useLiteralContent": false,
+            "bytecodeHash": "none",
+            "appendCBOR": false
+          },
+          "outputSelection": {
+            "*": {
+              "": [
+                "ast"
+              ],
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ]
+            }
+          },
+          "evmVersion": "paris",
+          "viaIR": true,
+          "libraries": {}
+        }
+      },
+      "imports": [
+        "lib/forge-std/src/StdStorage.sol",
+        "lib/forge-std/src/Vm.sol",
+        "lib/forge-std/src/console2.sol"
+      ],
+      "versionRequirement": ">=0.6.2, <0.9.0",
+      "artifacts": {
+        "StdCheats": {
+          "0.8.22+commit.4fc1097e.Linux.gcc": "StdCheats.sol/StdCheats.json"
+        },
+        "StdCheatsSafe": {
+          "0.8.22+commit.4fc1097e.Linux.gcc": "StdCheats.sol/StdCheatsSafe.json"
+        }
+      }
+    },
+    "lib/forge-std/src/StdError.sol": {
+      "lastModificationDate": 1698399640470,
+      "contentHash": "64c896e1276a291776e5ea5aecb3870a",
+      "sourceName": "lib/forge-std/src/StdError.sol",
+      "solcConfig": {
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 4194304,
+            "details": {
+              "constantOptimizer": true,
+              "yul": true,
+              "yulDetails": {
+                "stackAllocation": true,
+                "optimizerSteps": "dhfoDgvulfnTUtnIf"
+              }
+            }
+          },
+          "metadata": {
+            "useLiteralContent": false,
+            "bytecodeHash": "none",
+            "appendCBOR": false
+          },
+          "outputSelection": {
+            "*": {
+              "": [
+                "ast"
+              ],
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ]
+            }
+          },
+          "evmVersion": "paris",
+          "viaIR": true,
+          "libraries": {}
+        }
+      },
+      "imports": [],
+      "versionRequirement": ">=0.6.2, <0.9.0",
+      "artifacts": {
+        "stdError": {
+          "0.8.22+commit.4fc1097e.Linux.gcc": "StdError.sol/stdError.json"
+        }
+      }
+    },
+    "lib/forge-std/src/StdInvariant.sol": {
+      "lastModificationDate": 1698399640474,
+      "contentHash": "0a580d6fac69e9d4b6504f747f3c0c24",
+      "sourceName": "lib/forge-std/src/StdInvariant.sol",
+      "solcConfig": {
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 4194304,
+            "details": {
+              "constantOptimizer": true,
+              "yul": true,
+              "yulDetails": {
+                "stackAllocation": true,
+                "optimizerSteps": "dhfoDgvulfnTUtnIf"
+              }
+            }
+          },
+          "metadata": {
+            "useLiteralContent": false,
+            "bytecodeHash": "none",
+            "appendCBOR": false
+          },
+          "outputSelection": {
+            "*": {
+              "": [
+                "ast"
+              ],
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ]
+            }
+          },
+          "evmVersion": "paris",
+          "viaIR": true,
+          "libraries": {}
+        }
+      },
+      "imports": [],
+      "versionRequirement": ">=0.6.2, <0.9.0",
+      "artifacts": {
+        "StdInvariant": {
+          "0.8.22+commit.4fc1097e.Linux.gcc": "StdInvariant.sol/StdInvariant.json"
+        }
+      }
+    },
+    "lib/forge-std/src/StdJson.sol": {
+      "lastModificationDate": 1698399640474,
+      "contentHash": "a341308627b7eeab7589534daad58186",
+      "sourceName": "lib/forge-std/src/StdJson.sol",
+      "solcConfig": {
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 4194304,
+            "details": {
+              "constantOptimizer": true,
+              "yul": true,
+              "yulDetails": {
+                "stackAllocation": true,
+                "optimizerSteps": "dhfoDgvulfnTUtnIf"
+              }
+            }
+          },
+          "metadata": {
+            "useLiteralContent": false,
+            "bytecodeHash": "none",
+            "appendCBOR": false
+          },
+          "outputSelection": {
+            "*": {
+              "": [
+                "ast"
+              ],
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ]
+            }
+          },
+          "evmVersion": "paris",
+          "viaIR": true,
+          "libraries": {}
+        }
+      },
+      "imports": [
+        "lib/forge-std/src/Vm.sol"
+      ],
+      "versionRequirement": ">=0.6.0, <0.9.0",
+      "artifacts": {
+        "stdJson": {
+          "0.8.22+commit.4fc1097e.Linux.gcc": "StdJson.sol/stdJson.json"
+        }
+      }
+    },
+    "lib/forge-std/src/StdMath.sol": {
+      "lastModificationDate": 1698399640474,
+      "contentHash": "9da8f453eba6bb98f3d75bc6822bfb29",
+      "sourceName": "lib/forge-std/src/StdMath.sol",
+      "solcConfig": {
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 4194304,
+            "details": {
+              "constantOptimizer": true,
+              "yul": true,
+              "yulDetails": {
+                "stackAllocation": true,
+                "optimizerSteps": "dhfoDgvulfnTUtnIf"
+              }
+            }
+          },
+          "metadata": {
+            "useLiteralContent": false,
+            "bytecodeHash": "none",
+            "appendCBOR": false
+          },
+          "outputSelection": {
+            "*": {
+              "": [
+                "ast"
+              ],
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ]
+            }
+          },
+          "evmVersion": "paris",
+          "viaIR": true,
+          "libraries": {}
+        }
+      },
+      "imports": [],
+      "versionRequirement": ">=0.6.2, <0.9.0",
+      "artifacts": {
+        "stdMath": {
+          "0.8.22+commit.4fc1097e.Linux.gcc": "StdMath.sol/stdMath.json"
+        }
+      }
+    },
+    "lib/forge-std/src/StdStorage.sol": {
+      "lastModificationDate": 1698399640474,
+      "contentHash": "abd6f3379e6e2a7979b18abc21aea0c1",
+      "sourceName": "lib/forge-std/src/StdStorage.sol",
+      "solcConfig": {
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 4194304,
+            "details": {
+              "constantOptimizer": true,
+              "yul": true,
+              "yulDetails": {
+                "stackAllocation": true,
+                "optimizerSteps": "dhfoDgvulfnTUtnIf"
+              }
+            }
+          },
+          "metadata": {
+            "useLiteralContent": false,
+            "bytecodeHash": "none",
+            "appendCBOR": false
+          },
+          "outputSelection": {
+            "*": {
+              "": [
+                "ast"
+              ],
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ]
+            }
+          },
+          "evmVersion": "paris",
+          "viaIR": true,
+          "libraries": {}
+        }
+      },
+      "imports": [
+        "lib/forge-std/src/Vm.sol"
+      ],
+      "versionRequirement": ">=0.6.2, <0.9.0",
+      "artifacts": {
+        "stdStorage": {
+          "0.8.22+commit.4fc1097e.Linux.gcc": "StdStorage.sol/stdStorage.json"
+        },
+        "stdStorageSafe": {
+          "0.8.22+commit.4fc1097e.Linux.gcc": "StdStorage.sol/stdStorageSafe.json"
+        }
+      }
+    },
+    "lib/forge-std/src/StdStyle.sol": {
+      "lastModificationDate": 1698399640474,
+      "contentHash": "6281165a12aa639705c691fccefd855e",
+      "sourceName": "lib/forge-std/src/StdStyle.sol",
+      "solcConfig": {
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 4194304,
+            "details": {
+              "constantOptimizer": true,
+              "yul": true,
+              "yulDetails": {
+                "stackAllocation": true,
+                "optimizerSteps": "dhfoDgvulfnTUtnIf"
+              }
+            }
+          },
+          "metadata": {
+            "useLiteralContent": false,
+            "bytecodeHash": "none",
+            "appendCBOR": false
+          },
+          "outputSelection": {
+            "*": {
+              "": [
+                "ast"
+              ],
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ]
+            }
+          },
+          "evmVersion": "paris",
+          "viaIR": true,
+          "libraries": {}
+        }
+      },
+      "imports": [
+        "lib/forge-std/src/Vm.sol"
+      ],
+      "versionRequirement": ">=0.4.22, <0.9.0",
+      "artifacts": {
+        "StdStyle": {
+          "0.8.22+commit.4fc1097e.Linux.gcc": "StdStyle.sol/StdStyle.json"
+        }
+      }
+    },
+    "lib/forge-std/src/StdUtils.sol": {
+      "lastModificationDate": 1698399640474,
+      "contentHash": "3ce83748fd76644688f916c9cced545b",
+      "sourceName": "lib/forge-std/src/StdUtils.sol",
+      "solcConfig": {
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 4194304,
+            "details": {
+              "constantOptimizer": true,
+              "yul": true,
+              "yulDetails": {
+                "stackAllocation": true,
+                "optimizerSteps": "dhfoDgvulfnTUtnIf"
+              }
+            }
+          },
+          "metadata": {
+            "useLiteralContent": false,
+            "bytecodeHash": "none",
+            "appendCBOR": false
+          },
+          "outputSelection": {
+            "*": {
+              "": [
+                "ast"
+              ],
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ]
+            }
+          },
+          "evmVersion": "paris",
+          "viaIR": true,
+          "libraries": {}
+        }
+      },
+      "imports": [
+        "lib/forge-std/src/Vm.sol",
+        "lib/forge-std/src/interfaces/IMulticall3.sol"
+      ],
+      "versionRequirement": ">=0.6.2, <0.9.0",
+      "artifacts": {
+        "StdUtils": {
+          "0.8.22+commit.4fc1097e.Linux.gcc": "StdUtils.sol/StdUtils.json"
+        }
+      }
+    },
+    "lib/forge-std/src/Test.sol": {
+      "lastModificationDate": 1698399640474,
+      "contentHash": "15866901137b5670eabf31362523bd28",
+      "sourceName": "lib/forge-std/src/Test.sol",
+      "solcConfig": {
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 4194304,
+            "details": {
+              "constantOptimizer": true,
+              "yul": true,
+              "yulDetails": {
+                "stackAllocation": true,
+                "optimizerSteps": "dhfoDgvulfnTUtnIf"
+              }
+            }
+          },
+          "metadata": {
+            "useLiteralContent": false,
+            "bytecodeHash": "none",
+            "appendCBOR": false
+          },
+          "outputSelection": {
+            "*": {
+              "": [
+                "ast"
+              ],
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ]
+            }
+          },
+          "evmVersion": "paris",
+          "viaIR": true,
+          "libraries": {}
+        }
+      },
+      "imports": [
+        "lib/forge-std/src/Base.sol",
+        "lib/forge-std/src/StdAssertions.sol",
+        "lib/forge-std/src/StdChains.sol",
+        "lib/forge-std/src/StdCheats.sol",
+        "lib/forge-std/src/StdError.sol",
+        "lib/forge-std/src/StdInvariant.sol",
+        "lib/forge-std/src/StdJson.sol",
+        "lib/forge-std/src/StdMath.sol",
+        "lib/forge-std/src/StdStorage.sol",
+        "lib/forge-std/src/StdStyle.sol",
+        "lib/forge-std/src/StdUtils.sol",
+        "lib/forge-std/src/Vm.sol",
+        "lib/forge-std/src/console.sol",
+        "lib/forge-std/src/console2.sol",
+        "lib/forge-std/src/interfaces/IMulticall3.sol",
+        "lib/forge-std/src/safeconsole.sol",
+        "lib/solmate/lib/ds-test/src/test.sol"
+      ],
+      "versionRequirement": ">=0.6.2, <0.9.0",
+      "artifacts": {
+        "Test": {
+          "0.8.22+commit.4fc1097e.Linux.gcc": "Test.sol/Test.json"
+        }
+      }
+    },
+    "lib/forge-std/src/Vm.sol": {
+      "lastModificationDate": 1698399640474,
+      "contentHash": "eff2556a384c025f56150fb3f78de858",
+      "sourceName": "lib/forge-std/src/Vm.sol",
+      "solcConfig": {
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 4194304,
+            "details": {
+              "constantOptimizer": true,
+              "yul": true,
+              "yulDetails": {
+                "stackAllocation": true,
+                "optimizerSteps": "dhfoDgvulfnTUtnIf"
+              }
+            }
+          },
+          "metadata": {
+            "useLiteralContent": false,
+            "bytecodeHash": "none",
+            "appendCBOR": false
+          },
+          "outputSelection": {
+            "*": {
+              "": [
+                "ast"
+              ],
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ]
+            }
+          },
+          "evmVersion": "paris",
+          "viaIR": true,
+          "libraries": {}
+        }
+      },
+      "imports": [],
+      "versionRequirement": ">=0.6.2, <0.9.0",
+      "artifacts": {
+        "Vm": {
+          "0.8.22+commit.4fc1097e.Linux.gcc": "Vm.sol/Vm.json"
+        },
+        "VmSafe": {
+          "0.8.22+commit.4fc1097e.Linux.gcc": "Vm.sol/VmSafe.json"
+        }
+      }
+    },
+    "lib/forge-std/src/console.sol": {
+      "lastModificationDate": 1698399640474,
+      "contentHash": "100b8a33b917da1147740d7ab8b0ded3",
+      "sourceName": "lib/forge-std/src/console.sol",
+      "solcConfig": {
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 4194304,
+            "details": {
+              "constantOptimizer": true,
+              "yul": true,
+              "yulDetails": {
+                "stackAllocation": true,
+                "optimizerSteps": "dhfoDgvulfnTUtnIf"
+              }
+            }
+          },
+          "metadata": {
+            "useLiteralContent": false,
+            "bytecodeHash": "none",
+            "appendCBOR": false
+          },
+          "outputSelection": {
+            "*": {
+              "": [
+                "ast"
+              ],
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ]
+            }
+          },
+          "evmVersion": "paris",
+          "viaIR": true,
+          "libraries": {}
+        }
+      },
+      "imports": [],
+      "versionRequirement": ">=0.4.22, <0.9.0",
+      "artifacts": {
+        "console": {
+          "0.8.22+commit.4fc1097e.Linux.gcc": "console.sol/console.json"
+        }
+      }
+    },
+    "lib/forge-std/src/console2.sol": {
+      "lastModificationDate": 1698399640478,
+      "contentHash": "491ca717c1915995e78cc361485a3067",
+      "sourceName": "lib/forge-std/src/console2.sol",
+      "solcConfig": {
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 4194304,
+            "details": {
+              "constantOptimizer": true,
+              "yul": true,
+              "yulDetails": {
+                "stackAllocation": true,
+                "optimizerSteps": "dhfoDgvulfnTUtnIf"
+              }
+            }
+          },
+          "metadata": {
+            "useLiteralContent": false,
+            "bytecodeHash": "none",
+            "appendCBOR": false
+          },
+          "outputSelection": {
+            "*": {
+              "": [
+                "ast"
+              ],
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ]
+            }
+          },
+          "evmVersion": "paris",
+          "viaIR": true,
+          "libraries": {}
+        }
+      },
+      "imports": [],
+      "versionRequirement": ">=0.4.22, <0.9.0",
+      "artifacts": {
+        "console2": {
+          "0.8.22+commit.4fc1097e.Linux.gcc": "console2.sol/console2.json"
+        }
+      }
+    },
+    "lib/forge-std/src/interfaces/IMulticall3.sol": {
+      "lastModificationDate": 1698399640482,
+      "contentHash": "7b131ca1ca32ef6378b7b9ad5488b901",
+      "sourceName": "lib/forge-std/src/interfaces/IMulticall3.sol",
+      "solcConfig": {
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 4194304,
+            "details": {
+              "constantOptimizer": true,
+              "yul": true,
+              "yulDetails": {
+                "stackAllocation": true,
+                "optimizerSteps": "dhfoDgvulfnTUtnIf"
+              }
+            }
+          },
+          "metadata": {
+            "useLiteralContent": false,
+            "bytecodeHash": "none",
+            "appendCBOR": false
+          },
+          "outputSelection": {
+            "*": {
+              "": [
+                "ast"
+              ],
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ]
+            }
+          },
+          "evmVersion": "paris",
+          "viaIR": true,
+          "libraries": {}
+        }
+      },
+      "imports": [],
+      "versionRequirement": ">=0.6.2, <0.9.0",
+      "artifacts": {
+        "IMulticall3": {
+          "0.8.22+commit.4fc1097e.Linux.gcc": "IMulticall3.sol/IMulticall3.json"
+        }
+      }
+    },
+    "lib/forge-std/src/safeconsole.sol": {
+      "lastModificationDate": 1698399640482,
+      "contentHash": "ac3b1bf5a444db5db3656021830258a8",
+      "sourceName": "lib/forge-std/src/safeconsole.sol",
+      "solcConfig": {
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 4194304,
+            "details": {
+              "constantOptimizer": true,
+              "yul": true,
+              "yulDetails": {
+                "stackAllocation": true,
+                "optimizerSteps": "dhfoDgvulfnTUtnIf"
+              }
+            }
+          },
+          "metadata": {
+            "useLiteralContent": false,
+            "bytecodeHash": "none",
+            "appendCBOR": false
+          },
+          "outputSelection": {
+            "*": {
+              "": [
+                "ast"
+              ],
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ]
+            }
+          },
+          "evmVersion": "paris",
+          "viaIR": true,
+          "libraries": {}
+        }
+      },
+      "imports": [],
+      "versionRequirement": ">=0.6.2, <0.9.0",
+      "artifacts": {
+        "safeconsole": {
+          "0.8.22+commit.4fc1097e.Linux.gcc": "safeconsole.sol/safeconsole.json"
+        }
+      }
+    },
+    "lib/solmate/lib/ds-test/src/test.sol": {
+      "lastModificationDate": 1698399642646,
+      "contentHash": "962996f0e05d5218857a538a62d7c47e",
+      "sourceName": "lib/solmate/lib/ds-test/src/test.sol",
+      "solcConfig": {
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 4194304,
+            "details": {
+              "constantOptimizer": true,
+              "yul": true,
+              "yulDetails": {
+                "stackAllocation": true,
+                "optimizerSteps": "dhfoDgvulfnTUtnIf"
+              }
+            }
+          },
+          "metadata": {
+            "useLiteralContent": false,
+            "bytecodeHash": "none",
+            "appendCBOR": false
+          },
+          "outputSelection": {
+            "*": {
+              "": [
+                "ast"
+              ],
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ]
+            }
+          },
+          "evmVersion": "paris",
+          "viaIR": true,
+          "libraries": {}
+        }
+      },
+      "imports": [],
+      "versionRequirement": ">=0.5.0",
+      "artifacts": {
+        "DSTest": {
+          "0.8.22+commit.4fc1097e.Linux.gcc": "test.sol/DSTest.json"
+        }
+      }
+    },
+    "lib/solmate/src/tokens/ERC721.sol": {
+      "lastModificationDate": 1698399641678,
+      "contentHash": "ecc06cefc5404b9e1adbc2e459d5757e",
+      "sourceName": "lib/solmate/src/tokens/ERC721.sol",
+      "solcConfig": {
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 4194304,
+            "details": {
+              "constantOptimizer": true,
+              "yul": true,
+              "yulDetails": {
+                "stackAllocation": true,
+                "optimizerSteps": "dhfoDgvulfnTUtnIf"
+              }
+            }
+          },
+          "metadata": {
+            "useLiteralContent": false,
+            "bytecodeHash": "none",
+            "appendCBOR": false
+          },
+          "outputSelection": {
+            "*": {
+              "": [
+                "ast"
+              ],
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ]
+            }
+          },
+          "evmVersion": "paris",
+          "viaIR": true,
+          "libraries": {}
+        }
+      },
+      "imports": [],
+      "versionRequirement": ">=0.8.0",
+      "artifacts": {
+        "ERC721": {
+          "0.8.22+commit.4fc1097e.Linux.gcc": "tokens/ERC721.sol/ERC721.json"
+        },
+        "ERC721TokenReceiver": {
+          "0.8.22+commit.4fc1097e.Linux.gcc": "ERC721.sol/ERC721TokenReceiver.json"
+        }
+      }
+    },
+    "script/DeployERC721.s.sol": {
+      "lastModificationDate": 1698397757105,
+      "contentHash": "82b62eda862f25914fb654f6938721f0",
+      "sourceName": "script/DeployERC721.s.sol",
+      "solcConfig": {
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 4194304,
+            "details": {
+              "constantOptimizer": true,
+              "yul": true,
+              "yulDetails": {
+                "stackAllocation": true,
+                "optimizerSteps": "dhfoDgvulfnTUtnIf"
+              }
+            }
+          },
+          "metadata": {
+            "useLiteralContent": false,
+            "bytecodeHash": "none",
+            "appendCBOR": false
+          },
+          "outputSelection": {
+            "*": {
+              "": [
+                "ast"
+              ],
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ]
+            }
+          },
+          "evmVersion": "paris",
+          "viaIR": true,
+          "libraries": {}
+        }
+      },
+      "imports": [
+        "contracts/access/AccessControl.sol",
+        "contracts/token/ERC721/ERC721.sol",
+        "contracts/token/ERC721/IERC721Receiver.sol",
+        "contracts/token/ERC721/extensions/ERC721Burnable.sol",
+        "contracts/token/ERC721/extensions/ERC721Enumerable.sol",
+        "contracts/token/ERC721/extensions/ERC721Metadata_URI.sol",
+        "contracts/token/ERC721/extensions/ERC721Royalties.sol",
+        "contracts/token/ERC721/presets/ERC721Sovereign.sol",
+        "contracts/token/common/DecodeTokenURI.sol",
+        "contracts/token/common/ERC2981.sol",
+        "contracts/token/common/ERC712.sol",
+        "contracts/utils/Address.sol",
+        "contracts/utils/cryptography/ECDSA.sol",
+        "contracts/utils/cryptography/SignatureChecker.sol",
+        "lib/forge-std/src/Base.sol",
+        "lib/forge-std/src/Script.sol",
+        "lib/forge-std/src/StdChains.sol",
+        "lib/forge-std/src/StdCheats.sol",
+        "lib/forge-std/src/StdJson.sol",
+        "lib/forge-std/src/StdMath.sol",
+        "lib/forge-std/src/StdStorage.sol",
+        "lib/forge-std/src/StdStyle.sol",
+        "lib/forge-std/src/StdUtils.sol",
+        "lib/forge-std/src/Vm.sol",
+        "lib/forge-std/src/console.sol",
+        "lib/forge-std/src/console2.sol",
+        "lib/forge-std/src/interfaces/IMulticall3.sol",
+        "lib/forge-std/src/safeconsole.sol"
+      ],
+      "versionRequirement": "=0.8.22",
+      "artifacts": {
+        "Anvil": {
+          "0.8.22+commit.4fc1097e.Linux.gcc": "DeployERC721.s.sol/Anvil.json"
+        },
+        "Goerli": {
+          "0.8.22+commit.4fc1097e.Linux.gcc": "DeployERC721.s.sol/Goerli.json"
+        }
+      }
+    },
+    "script/Mint.s.sol": {
+      "lastModificationDate": 1698397757105,
+      "contentHash": "66f93fa0738e7388e9843accdfb02579",
+      "sourceName": "script/Mint.s.sol",
+      "solcConfig": {
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 4194304,
+            "details": {
+              "constantOptimizer": true,
+              "yul": true,
+              "yulDetails": {
+                "stackAllocation": true,
+                "optimizerSteps": "dhfoDgvulfnTUtnIf"
+              }
+            }
+          },
+          "metadata": {
+            "useLiteralContent": false,
+            "bytecodeHash": "none",
+            "appendCBOR": false
+          },
+          "outputSelection": {
+            "*": {
+              "": [
+                "ast"
+              ],
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ]
+            }
+          },
+          "evmVersion": "paris",
+          "viaIR": true,
+          "libraries": {}
+        }
+      },
+      "imports": [
+        "contracts/access/AccessControl.sol",
+        "contracts/token/ERC721/ERC721.sol",
+        "contracts/token/ERC721/IERC721Receiver.sol",
+        "contracts/token/ERC721/extensions/ERC721Burnable.sol",
+        "contracts/token/ERC721/extensions/ERC721Enumerable.sol",
+        "contracts/token/ERC721/extensions/ERC721Metadata_URI.sol",
+        "contracts/token/ERC721/extensions/ERC721Royalties.sol",
+        "contracts/token/ERC721/presets/ERC721Sovereign.sol",
+        "contracts/token/common/DecodeTokenURI.sol",
+        "contracts/token/common/ERC2981.sol",
+        "contracts/token/common/ERC712.sol",
+        "contracts/utils/Address.sol",
+        "contracts/utils/cryptography/ECDSA.sol",
+        "contracts/utils/cryptography/SignatureChecker.sol",
+        "lib/forge-std/src/Base.sol",
+        "lib/forge-std/src/Script.sol",
+        "lib/forge-std/src/StdChains.sol",
+        "lib/forge-std/src/StdCheats.sol",
+        "lib/forge-std/src/StdJson.sol",
+        "lib/forge-std/src/StdMath.sol",
+        "lib/forge-std/src/StdStorage.sol",
+        "lib/forge-std/src/StdStyle.sol",
+        "lib/forge-std/src/StdUtils.sol",
+        "lib/forge-std/src/Vm.sol",
+        "lib/forge-std/src/console.sol",
+        "lib/forge-std/src/console2.sol",
+        "lib/forge-std/src/interfaces/IMulticall3.sol",
+        "lib/forge-std/src/safeconsole.sol"
+      ],
+      "versionRequirement": "=0.8.22",
+      "artifacts": {
+        "Anvil": {
+          "0.8.22+commit.4fc1097e.Linux.gcc": "Mint.s.sol/Anvil.json"
+        },
+        "Goerli": {
+          "0.8.22+commit.4fc1097e.Linux.gcc": "Mint.s.sol/Goerli.json"
+        }
+      }
+    },
+    "test/ERC721.t.sol": {
+      "lastModificationDate": 1698397757285,
+      "contentHash": "529c8c5e26b49e0397e011db1d750276",
+      "sourceName": "test/ERC721.t.sol",
+      "solcConfig": {
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 4194304,
+            "details": {
+              "constantOptimizer": true,
+              "yul": true,
+              "yulDetails": {
+                "stackAllocation": true,
+                "optimizerSteps": "dhfoDgvulfnTUtnIf"
+              }
+            }
+          },
+          "metadata": {
+            "useLiteralContent": false,
+            "bytecodeHash": "none",
+            "appendCBOR": false
+          },
+          "outputSelection": {
+            "*": {
+              "": [
+                "ast"
+              ],
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ]
+            }
+          },
+          "evmVersion": "paris",
+          "viaIR": true,
+          "libraries": {}
+        }
+      },
+      "imports": [
+        "contracts/access/AccessControl.sol",
+        "contracts/factory/CuratedFactory.sol",
+        "contracts/proxy/Clones.sol",
+        "contracts/token/ERC721/ERC721.sol",
+        "contracts/token/ERC721/IERC721Receiver.sol",
+        "contracts/token/ERC721/extensions/ERC721Burnable.sol",
+        "contracts/token/ERC721/extensions/ERC721Enumerable.sol",
+        "contracts/token/ERC721/extensions/ERC721Metadata_URI.sol",
+        "contracts/token/ERC721/extensions/ERC721Royalties.sol",
+        "contracts/token/ERC721/presets/ERC721Sovereign.sol",
+        "contracts/token/common/DecodeTokenURI.sol",
+        "contracts/token/common/ERC2981.sol",
+        "contracts/token/common/ERC712.sol",
+        "contracts/utils/Address.sol",
+        "contracts/utils/cryptography/ECDSA.sol",
+        "contracts/utils/cryptography/SignatureChecker.sol",
+        "lib/forge-std/src/Base.sol",
+        "lib/forge-std/src/StdAssertions.sol",
+        "lib/forge-std/src/StdChains.sol",
+        "lib/forge-std/src/StdCheats.sol",
+        "lib/forge-std/src/StdError.sol",
+        "lib/forge-std/src/StdInvariant.sol",
+        "lib/forge-std/src/StdJson.sol",
+        "lib/forge-std/src/StdMath.sol",
+        "lib/forge-std/src/StdStorage.sol",
+        "lib/forge-std/src/StdStyle.sol",
+        "lib/forge-std/src/StdUtils.sol",
+        "lib/forge-std/src/Test.sol",
+        "lib/forge-std/src/Vm.sol",
+        "lib/forge-std/src/console.sol",
+        "lib/forge-std/src/console2.sol",
+        "lib/forge-std/src/interfaces/IMulticall3.sol",
+        "lib/forge-std/src/safeconsole.sol",
+        "lib/solmate/lib/ds-test/src/test.sol",
+        "test/helpers/ERC721Validator.sol",
+        "test/helpers/Utils.sol",
+        "test/interfaces/IAccessControl.sol",
+        "test/interfaces/IERC165.sol",
+        "test/interfaces/IERC721.sol",
+        "test/interfaces/IERC721Sovereign.sol",
+        "test/mocks/ERC721Recipient.sol"
+      ],
+      "versionRequirement": "=0.8.22",
+      "artifacts": {
+        "ERC721Test": {
+          "0.8.22+commit.4fc1097e.Linux.gcc": "ERC721.t.sol/ERC721Test.json"
+        }
+      }
+    },
+    "test/helpers/ERC721Validator.sol": {
+      "lastModificationDate": 1698397757285,
+      "contentHash": "83237b88f12fe82052aa122336906c96",
+      "sourceName": "test/helpers/ERC721Validator.sol",
+      "solcConfig": {
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 4194304,
+            "details": {
+              "constantOptimizer": true,
+              "yul": true,
+              "yulDetails": {
+                "stackAllocation": true,
+                "optimizerSteps": "dhfoDgvulfnTUtnIf"
+              }
+            }
+          },
+          "metadata": {
+            "useLiteralContent": false,
+            "bytecodeHash": "none",
+            "appendCBOR": false
+          },
+          "outputSelection": {
+            "*": {
+              "": [
+                "ast"
+              ],
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ]
+            }
+          },
+          "evmVersion": "paris",
+          "viaIR": true,
+          "libraries": {}
+        }
+      },
+      "imports": [
+        "contracts/token/common/ERC712.sol",
+        "contracts/utils/Address.sol",
+        "lib/forge-std/src/Base.sol",
+        "lib/forge-std/src/StdAssertions.sol",
+        "lib/forge-std/src/StdChains.sol",
+        "lib/forge-std/src/StdCheats.sol",
+        "lib/forge-std/src/StdError.sol",
+        "lib/forge-std/src/StdInvariant.sol",
+        "lib/forge-std/src/StdJson.sol",
+        "lib/forge-std/src/StdMath.sol",
+        "lib/forge-std/src/StdStorage.sol",
+        "lib/forge-std/src/StdStyle.sol",
+        "lib/forge-std/src/StdUtils.sol",
+        "lib/forge-std/src/Test.sol",
+        "lib/forge-std/src/Vm.sol",
+        "lib/forge-std/src/console.sol",
+        "lib/forge-std/src/console2.sol",
+        "lib/forge-std/src/interfaces/IMulticall3.sol",
+        "lib/forge-std/src/safeconsole.sol",
+        "lib/solmate/lib/ds-test/src/test.sol",
+        "test/helpers/Utils.sol",
+        "test/interfaces/IAccessControl.sol",
+        "test/interfaces/IERC165.sol",
+        "test/interfaces/IERC721.sol",
+        "test/interfaces/IERC721Sovereign.sol",
+        "test/mocks/ERC721Recipient.sol"
+      ],
+      "versionRequirement": "=0.8.22",
+      "artifacts": {
+        "ERC721Validator": {
+          "0.8.22+commit.4fc1097e.Linux.gcc": "ERC721Validator.sol/ERC721Validator.json"
+        }
+      }
+    },
+    "test/helpers/Utils.sol": {
+      "lastModificationDate": 1698397757285,
+      "contentHash": "c26a9e3ffa5a7c19bab3bf58a5ff8701",
+      "sourceName": "test/helpers/Utils.sol",
+      "solcConfig": {
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 4194304,
+            "details": {
+              "constantOptimizer": true,
+              "yul": true,
+              "yulDetails": {
+                "stackAllocation": true,
+                "optimizerSteps": "dhfoDgvulfnTUtnIf"
+              }
+            }
+          },
+          "metadata": {
+            "useLiteralContent": false,
+            "bytecodeHash": "none",
+            "appendCBOR": false
+          },
+          "outputSelection": {
+            "*": {
+              "": [
+                "ast"
+              ],
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ]
+            }
+          },
+          "evmVersion": "paris",
+          "viaIR": true,
+          "libraries": {}
+        }
+      },
+      "imports": [],
+      "versionRequirement": "=0.8.22",
+      "artifacts": {
+        "Constants": {
+          "0.8.22+commit.4fc1097e.Linux.gcc": "Utils.sol/Constants.json"
+        }
+      }
+    },
+    "test/interfaces/IAccessControl.sol": {
+      "lastModificationDate": 1698397757289,
+      "contentHash": "1d9f6764f59958ef828c4e1911ea6302",
+      "sourceName": "test/interfaces/IAccessControl.sol",
+      "solcConfig": {
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 4194304,
+            "details": {
+              "constantOptimizer": true,
+              "yul": true,
+              "yulDetails": {
+                "stackAllocation": true,
+                "optimizerSteps": "dhfoDgvulfnTUtnIf"
+              }
+            }
+          },
+          "metadata": {
+            "useLiteralContent": false,
+            "bytecodeHash": "none",
+            "appendCBOR": false
+          },
+          "outputSelection": {
+            "*": {
+              "": [
+                "ast"
+              ],
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ]
+            }
+          },
+          "evmVersion": "paris",
+          "viaIR": true,
+          "libraries": {}
+        }
+      },
+      "imports": [],
+      "versionRequirement": "=0.8.22",
+      "artifacts": {
+        "IAccessControl": {
+          "0.8.22+commit.4fc1097e.Linux.gcc": "IAccessControl.sol/IAccessControl.json"
+        }
+      }
+    },
+    "test/interfaces/IERC165.sol": {
+      "lastModificationDate": 1698397757289,
+      "contentHash": "da6b7498e0e203d3a8e30e80521a2676",
+      "sourceName": "test/interfaces/IERC165.sol",
+      "solcConfig": {
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 4194304,
+            "details": {
+              "constantOptimizer": true,
+              "yul": true,
+              "yulDetails": {
+                "stackAllocation": true,
+                "optimizerSteps": "dhfoDgvulfnTUtnIf"
+              }
+            }
+          },
+          "metadata": {
+            "useLiteralContent": false,
+            "bytecodeHash": "none",
+            "appendCBOR": false
+          },
+          "outputSelection": {
+            "*": {
+              "": [
+                "ast"
+              ],
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ]
+            }
+          },
+          "evmVersion": "paris",
+          "viaIR": true,
+          "libraries": {}
+        }
+      },
+      "imports": [],
+      "versionRequirement": "=0.8.22",
+      "artifacts": {
+        "IERC165": {
+          "0.8.22+commit.4fc1097e.Linux.gcc": "IERC165.sol/IERC165.json"
+        }
+      }
+    },
+    "test/interfaces/IERC721.sol": {
+      "lastModificationDate": 1698397757289,
+      "contentHash": "3622edcf021721089319b3ef3996e364",
+      "sourceName": "test/interfaces/IERC721.sol",
+      "solcConfig": {
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 4194304,
+            "details": {
+              "constantOptimizer": true,
+              "yul": true,
+              "yulDetails": {
+                "stackAllocation": true,
+                "optimizerSteps": "dhfoDgvulfnTUtnIf"
+              }
+            }
+          },
+          "metadata": {
+            "useLiteralContent": false,
+            "bytecodeHash": "none",
+            "appendCBOR": false
+          },
+          "outputSelection": {
+            "*": {
+              "": [
+                "ast"
+              ],
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ]
+            }
+          },
+          "evmVersion": "paris",
+          "viaIR": true,
+          "libraries": {}
+        }
+      },
+      "imports": [
+        "test/interfaces/IERC165.sol"
+      ],
+      "versionRequirement": "=0.8.22",
+      "artifacts": {
+        "IERC721": {
+          "0.8.22+commit.4fc1097e.Linux.gcc": "IERC721.sol/IERC721.json"
+        }
+      }
+    },
+    "test/interfaces/IERC721Sovereign.sol": {
+      "lastModificationDate": 1698397757289,
+      "contentHash": "73cbbe61b43ba4d7f65c02802700b282",
+      "sourceName": "test/interfaces/IERC721Sovereign.sol",
+      "solcConfig": {
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 4194304,
+            "details": {
+              "constantOptimizer": true,
+              "yul": true,
+              "yulDetails": {
+                "stackAllocation": true,
+                "optimizerSteps": "dhfoDgvulfnTUtnIf"
+              }
+            }
+          },
+          "metadata": {
+            "useLiteralContent": false,
+            "bytecodeHash": "none",
+            "appendCBOR": false
+          },
+          "outputSelection": {
+            "*": {
+              "": [
+                "ast"
+              ],
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ]
+            }
+          },
+          "evmVersion": "paris",
+          "viaIR": true,
+          "libraries": {}
+        }
+      },
+      "imports": [
+        "contracts/token/common/ERC712.sol",
+        "contracts/utils/Address.sol",
+        "test/interfaces/IERC165.sol",
+        "test/interfaces/IERC721.sol"
+      ],
+      "versionRequirement": "=0.8.22",
+      "artifacts": {
+        "IERC721Sovereign": {
+          "0.8.22+commit.4fc1097e.Linux.gcc": "IERC721Sovereign.sol/IERC721Sovereign.json"
+        }
+      }
+    },
+    "test/mocks/ERC721Recipient.sol": {
+      "lastModificationDate": 1698397757289,
+      "contentHash": "2cd5f000c6ec824897b3f5c1596cb6eb",
+      "sourceName": "test/mocks/ERC721Recipient.sol",
+      "solcConfig": {
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 4194304,
+            "details": {
+              "constantOptimizer": true,
+              "yul": true,
+              "yulDetails": {
+                "stackAllocation": true,
+                "optimizerSteps": "dhfoDgvulfnTUtnIf"
+              }
+            }
+          },
+          "metadata": {
+            "useLiteralContent": false,
+            "bytecodeHash": "none",
+            "appendCBOR": false
+          },
+          "outputSelection": {
+            "*": {
+              "": [
+                "ast"
+              ],
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ]
+            }
+          },
+          "evmVersion": "paris",
+          "viaIR": true,
+          "libraries": {}
+        }
+      },
+      "imports": [],
+      "versionRequirement": "=0.8.22",
+      "artifacts": {
+        "ERC721Recipient": {
+          "0.8.22+commit.4fc1097e.Linux.gcc": "ERC721Recipient.sol/ERC721Recipient.json"
+        },
+        "NonERC721Recipient": {
+          "0.8.22+commit.4fc1097e.Linux.gcc": "ERC721Recipient.sol/NonERC721Recipient.json"
+        },
+        "RevertingERC721Recipient": {
+          "0.8.22+commit.4fc1097e.Linux.gcc": "ERC721Recipient.sol/RevertingERC721Recipient.json"
+        },
+        "WrongReturnDataERC721Recipient": {
+          "0.8.22+commit.4fc1097e.Linux.gcc": "ERC721Recipient.sol/WrongReturnDataERC721Recipient.json"
+        }
+      }
+    },
+    "test/mocks/MockERC721SovereignV1.sol": {
+      "lastModificationDate": 1698397757289,
+      "contentHash": "3e4c4c52694bbf51f0949d224e4ec3c6",
+      "sourceName": "test/mocks/MockERC721SovereignV1.sol",
+      "solcConfig": {
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 4194304,
+            "details": {
+              "constantOptimizer": true,
+              "yul": true,
+              "yulDetails": {
+                "stackAllocation": true,
+                "optimizerSteps": "dhfoDgvulfnTUtnIf"
+              }
+            }
+          },
+          "metadata": {
+            "useLiteralContent": false,
+            "bytecodeHash": "none",
+            "appendCBOR": false
+          },
+          "outputSelection": {
+            "*": {
+              "": [
+                "ast"
+              ],
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ]
+            }
+          },
+          "evmVersion": "paris",
+          "viaIR": true,
+          "libraries": {}
+        }
+      },
+      "imports": [
+        "lib/solmate/src/tokens/ERC721.sol"
+      ],
+      "versionRequirement": "=0.8.22",
+      "artifacts": {
+        "MockERC721SovereignV1": {
+          "0.8.22+commit.4fc1097e.Linux.gcc": "MockERC721SovereignV1.sol/MockERC721SovereignV1.json"
+        }
+      }
+    },
+    "test/mocks/RoyaltyRegistry.sol": {
+      "lastModificationDate": 1698397757289,
+      "contentHash": "cfe36ad049241acc0ff8c6f603b59407",
+      "sourceName": "test/mocks/RoyaltyRegistry.sol",
+      "solcConfig": {
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 4194304,
+            "details": {
+              "constantOptimizer": true,
+              "yul": true,
+              "yulDetails": {
+                "stackAllocation": true,
+                "optimizerSteps": "dhfoDgvulfnTUtnIf"
+              }
+            }
+          },
+          "metadata": {
+            "useLiteralContent": false,
+            "bytecodeHash": "none",
+            "appendCBOR": false
+          },
+          "outputSelection": {
+            "*": {
+              "": [
+                "ast"
+              ],
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ]
+            }
+          },
+          "evmVersion": "paris",
+          "viaIR": true,
+          "libraries": {}
+        }
+      },
+      "imports": [],
+      "versionRequirement": "=0.8.22",
+      "artifacts": {
+        "RoyaltyRegistry": {
+          "0.8.22+commit.4fc1097e.Linux.gcc": "RoyaltyRegistry.sol/RoyaltyRegistry.json"
+        }
+      }
+    }
+  }
+}

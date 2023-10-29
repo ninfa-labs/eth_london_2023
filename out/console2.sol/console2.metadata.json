@@ -1,0 +1,70 @@
+{
+  "compiler": {
+    "version": "0.8.22+commit.4fc1097e"
+  },
+  "language": "Solidity",
+  "output": {
+    "abi": [],
+    "devdoc": {
+      "details": "The original console.sol uses `int` and `uint` for computing function selectors, but it should use `int256` and `uint256`. This modified version fixes that. This version is recommended over `console.sol` if you don't need compatibility with Hardhat as the logs will show up in forge stack traces. If you do need compatibility with Hardhat, you must use `console.sol`. Reference: https://github.com/NomicFoundation/hardhat/issues/2178",
+      "kind": "dev",
+      "methods": {},
+      "version": 1
+    },
+    "userdoc": {
+      "kind": "user",
+      "methods": {},
+      "version": 1
+    }
+  },
+  "settings": {
+    "compilationTarget": {
+      "lib/forge-std/src/console2.sol": "console2"
+    },
+    "evmVersion": "paris",
+    "libraries": {},
+    "metadata": {
+      "appendCBOR": false,
+      "bytecodeHash": "none"
+    },
+    "optimizer": {
+      "details": {
+        "constantOptimizer": true,
+        "cse": true,
+        "deduplicate": true,
+        "inliner": true,
+        "jumpdestRemover": true,
+        "orderLiterals": true,
+        "peephole": true,
+        "simpleCounterForLoopUncheckedIncrement": true,
+        "yul": true,
+        "yulDetails": {
+          "optimizerSteps": "dhfoDgvulfnTUtnIf:fDnTOcmu",
+          "stackAllocation": true
+        }
+      },
+      "runs": 4194304
+    },
+    "remappings": [
+      ":ds-test/=lib/solmate/lib/ds-test/src/",
+      ":forge-std/=lib/forge-std/src/",
+      ":openzeppelin/=lib/openzeppelin-contracts/contracts/",
+      ":prb-test/=lib/prb-test/src/",
+      ":solmate/=lib/solmate/src/",
+      ":src/=contracts/",
+      ":test/=test/"
+    ],
+    "viaIR": true
+  },
+  "sources": {
+    "lib/forge-std/src/console2.sol": {
+      "keccak256": "0x954646445d1014c3cd85c7918f5e7adeeca5ee44b68c00bafa237e597a4e35ea",
+      "license": "MIT",
+      "urls": [
+        "bzz-raw://516fa3be52da4763147175bfba4be0aa011fadbb0c1afb01f97265bd4cee7973",
+        "dweb:/ipfs/QmdixAyMJefx7qePChgdxcBH5MxhmN7vsqPuPLx3CgrVmF"
+      ]
+    }
+  },
+  "version": 1
+}

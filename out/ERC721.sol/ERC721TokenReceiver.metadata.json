@@ -1,0 +1,106 @@
+{
+  "compiler": {
+    "version": "0.8.22+commit.4fc1097e"
+  },
+  "language": "Solidity",
+  "output": {
+    "abi": [
+      {
+        "inputs": [
+          {
+            "internalType": "address",
+            "name": "",
+            "type": "address"
+          },
+          {
+            "internalType": "address",
+            "name": "",
+            "type": "address"
+          },
+          {
+            "internalType": "uint256",
+            "name": "",
+            "type": "uint256"
+          },
+          {
+            "internalType": "bytes",
+            "name": "",
+            "type": "bytes"
+          }
+        ],
+        "name": "onERC721Received",
+        "outputs": [
+          {
+            "internalType": "bytes4",
+            "name": "",
+            "type": "bytes4"
+          }
+        ],
+        "stateMutability": "nonpayable",
+        "type": "function"
+      }
+    ],
+    "devdoc": {
+      "author": "Solmate (https://github.com/transmissions11/solmate/blob/main/src/tokens/ERC721.sol)",
+      "kind": "dev",
+      "methods": {},
+      "version": 1
+    },
+    "userdoc": {
+      "kind": "user",
+      "methods": {},
+      "notice": "A generic interface for a contract which properly accepts ERC721 tokens.",
+      "version": 1
+    }
+  },
+  "settings": {
+    "compilationTarget": {
+      "lib/solmate/src/tokens/ERC721.sol": "ERC721TokenReceiver"
+    },
+    "evmVersion": "paris",
+    "libraries": {},
+    "metadata": {
+      "appendCBOR": false,
+      "bytecodeHash": "none"
+    },
+    "optimizer": {
+      "details": {
+        "constantOptimizer": true,
+        "cse": true,
+        "deduplicate": true,
+        "inliner": true,
+        "jumpdestRemover": true,
+        "orderLiterals": true,
+        "peephole": true,
+        "simpleCounterForLoopUncheckedIncrement": true,
+        "yul": true,
+        "yulDetails": {
+          "optimizerSteps": "dhfoDgvulfnTUtnIf:fDnTOcmu",
+          "stackAllocation": true
+        }
+      },
+      "runs": 4194304
+    },
+    "remappings": [
+      ":ds-test/=lib/solmate/lib/ds-test/src/",
+      ":forge-std/=lib/forge-std/src/",
+      ":openzeppelin/=lib/openzeppelin-contracts/contracts/",
+      ":prb-test/=lib/prb-test/src/",
+      ":solmate/=lib/solmate/src/",
+      ":src/=contracts/",
+      ":test/=test/"
+    ],
+    "viaIR": true
+  },
+  "sources": {
+    "lib/solmate/src/tokens/ERC721.sol": {
+      "keccak256": "0x04af19f16f00ba65ae168d6d10da5210dc18da6bcec6974dccf984ba388aa22d",
+      "license": "AGPL-3.0-only",
+      "urls": [
+        "bzz-raw://098e69f22b67da6927e03203c12ebfda5b0490518f6d9cce7853001ac5ad8403",
+        "dweb:/ipfs/QmYyzfurQe88PsVjRNfutV3gS7Vi68f7zgtVZVtLfd4ViK"
+      ]
+    }
+  },
+  "version": 1
+}

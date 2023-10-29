@@ -1,0 +1,57 @@
+# Full reference https://github.com/foundry-rs/foundry/tree/master/config
+
+[profile.default]
+  auto_detect_solc = false
+  block_timestamp = 1_680_220_800 # March 31, 2023 at 00:00 GMT
+  bytecode_hash = "none" # ipfs (default) https://book.getfoundry.sh/reference/config/solidity-compiler#bytecode_hash
+  cbor_metadata = false
+  evm_version = "paris"
+  solc_version = "0.8.22"
+  via_ir = true
+  auto_detect_remappings = true
+  fuzz = { runs = 1_000 }
+  gas_reports = ["*"]
+  libs = ["lib"]
+  optimizer = true
+  optimizer_runs = 4_194_304 # a larger “runs” parameter will produce longer but more gas efficient code. The maximum value of the parameter is 2**32-1.
+  out = "out"
+  script = "script"
+  src = "src"
+  test = "test"
+  extra_output_files=["metadata"]
+  fs_permissions = [{ access = "read-write", path = "."}]
+
+[profile.default.optimizer_details]
+  constantOptimizer = true
+  yul = true
+
+# this sets the `yulDetails` of the `optimizer_details` for the `default` profile
+[profile.default.optimizer_details.yulDetails]
+  stackAllocation = true
+  optimizerSteps = 'dhfoDgvulfnTUtnIf'
+
+[profile.lite.optimizer_details.yulDetails]
+  optimizerSteps = ''
+
+[profile.ci]
+  fuzz = { runs = 1_000 }
+  verbosity = 4
+
+[fmt]
+  bracket_spacing = true
+  int_types = "long"
+  line_length = 120
+  multiline_func_header = "all"
+  number_underscore = "thousands"
+  quote_style = "double"
+  tab_width = 4
+  wrap_comments = true
+
+[rpc_endpoints]
+
+  ethereum = "https://mainnet.infura.io/v3/${INFURA_API_KEY}"
+  goerli = "https://goerli.infura.io/v3/${INFURA_API_KEY}"
+  localhost = "http://127.0.0.1:8545"
+  optimism = "https://optimism-mainnet.infura.io/v3/${INFURA_API_KEY}"
+  polygon = "https://polygon-mainnet.infura.io/v3/${INFURA_API_KEY}"
+  sepolia = "https://sepolia.infura.io/v3/${INFURA_API_KEY}"
