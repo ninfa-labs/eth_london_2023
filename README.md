@@ -1,39 +1,88 @@
-# Social Login + MPC wallet + Account Abstracion
+![](https://ninfa.io/static/media/darklogo.649655b0.png)
+Wallet-less web2 authentication and UX for web3 DAPPs
+=======================
 
-## Setup
+**Live Demo**: [Link](https://hackathon-starter-1.ydftech.com/)
 
-### Install Node Modules
+**Swimlanes Diagram**: [Link](https://swimlanes.io/u/de98ILCjT) exemplifying start-to-finish web2 user journery from onboarding with their web2 accounts to becoming a web3 citizen without having to change their original address, thanks to Account Abstraction!
 
-`pnpm i`
+An fully functional NFT marketplace for web2 (and web3) users.
 
-### Foundry Installation
+Collectors can buy, sell and transfer NFTs without ever creating a crypto wallet or
+paying for gas. Any NFT or ETH is sent to an Account Abstraction contract ('s predicted address), whose owner is an MPC wallet (or Multisig owned by one or more wallets) created and
+controlled by any web2 authentication method, OAuth, OTP or WebAuthn.
 
-[Install Foundry Docs](https://book.getfoundry.sh/getting-started/installation)
+<h4 align="center">Web2 Authentication</h4>
 
-### Install smart contract libraries
+![](https://github.com/ninfa-io/eth_london_2023/assets/17223455/0b1f0ae5-a471-4193-8648-b6ffe6a87319)
 
-`forge install`
+## Table of Contents
 
-### Compile Contracts
+- [Features](#features)
+- [Prerequisites](#prerequisites)
+- [Getting Started](#getting-started)
+- [Obtaining API Keys](#obtaining-api-keys)
+- [Initializing The Project](#initializing-the-project)
+- [License](#license)
 
-'forge build'
+## Features
 
-### Create .env
+- Web2 Onboarding and Transacting with Blockchain
+  - **OTP Authentication:** using Email with magic link
+  - **OAuth 2.0 Authentication:** Sign in with Google, Facebook, Twitter, LinkedIn, Twitch, Github, Snapchat
+  - **Web3 Authentication:** Via web3 wallet provider such as Metamask
+- **User Profile and NFT Management**
+  - See collected NFTs
+  - Sell and Transfer owned NFTs
+  - Link multiple web2 authentication strategies to the same ERC-4337 smart contract account
+  - Social Recovery usin Web3Auth
+  - (TODO) Add verifiable claims such as KYC or ENS to verify ownership of Account Abstraction contract for frontends.
+- **Smart Contracts**
+  - Self-sovereign ERC-721 developed in-house at Ninfa.io deployed via Factory contract
+  - Buy and sell functions including lazy minting and selling using ERC-712
+    - ERC-1271 Signature Validation Method for Contracts (allows MPC wallets to sign on behalf of ERC-4337 account)
+  - Extensions; burnable, enumerable, metadataURI, creator royalties EIP-2981
 
-Register an infura account and create an IPFS project. Register a development account with Lit to get your API key,
-otherwise try with "1234567890", or search for existing API keys hardcoded in some of https://github.com/LIT-Protocol/
-example apps ;)
+## Prerequisites
+
+- [Node.js 18+](http://nodejs.org)
+- [Foundry](https://book.getfoundry.sh/getting-started/installation)
+
+## Getting Started
+
+```bash
+# Install Node Modules
+
+pnpm i
+
+# Install smart contract libraries
+
+forge install
+
+# Compile Contracts
+
+forge build
+```
+
+## Obtaining API Keys
+
+You will need to obtain appropriate credentials (Client ID, Client Secret, API Key, or Username & Password) for API and service provides which you need.
+
+Create a new `.env` file and update the placeholder keys with the newly acquired ones.
 
 ```
-# Private Keys
 ANVIL_ACCOUNT_0_PK="0xac0974bec39a17e36ba4a6b4d238ff944bacb478cbed5efcae784d7bf4f2ff80"
 ANVIL_MNEMONIC="test test test test test test test test test test test junk"
-# API KEYS
-INFURA_IPFS_PROJECT_ID="<your_project_id>"
-INFURA_IPFS_PROJECT_SECRET="<your_project_secret>"
-INFURA_API_KEY="
-LIT_API_KEY="1234567890"
+REACT_APP_PRIV_KEY=""
+INFURA_IPFS_PROJECT_ID=""
+INFURA_IPFS_PROJECT_SECRET=""
+INFURA_API_KEY=""
+REACT_APP_INFURA_PROJECT_ID=""
+REACT_APP_GOOGLE=""
+REACT_APP_WEB3AUTH_CLIENT_ID=""
 ```
+
+## Initializing the Project
 
 ### Run Anvil
 
@@ -43,16 +92,18 @@ In a new terminal start the development blockchain
 
 ### Run Deployment Script
 
+Deploy Locally
+
 `forge script script/DeployERC721.s.sol:Anvil --fork-url=localhost -vv --broadcast`
 
-or
+or deploy on testnet
 
 `forge script script/DeployERC721.s.sol:Goerli --fork-url=goerli -vv --broadcast`
 
 ### Run IPFS script
 
-Run the node script providing as arguments the chain id (31337 for anvil, 5 for Goerli, etc) and the ERC721 contract
-address, found in `./broadcast/DeployERC721.s.sol/<chainId>/run-latest.json` under `transactions[0].contractAddress`
+Run the node script providing as arguments the chain id and the ERC721 contract address, found in
+`./broadcast/DeployERC721.s.sol/<chainId>/run-latest.json` under `transactions[0].contractAddress`
 
 `node src/utils/ipfs.mjs <chainId> <deployed_contract_address>`
 
@@ -61,26 +112,27 @@ instance, i.e. the CREATE tx is the first on the local blockchain and the deploy
 
 `node src/utils/ipfs.mjs 31337 0x5FbDB2315678afecb367f032d93F642f64180aa3`
 
-The script reads images already contained in `./src/assets/gallery/*` and for each of them generates a metadata file and
-uploads it on IPFS, then creates `./src/assets/nftsData.js` and populates it with useful data about each NFT, this file
-acts as a fake backend for demo purposes. It also creates `./src/assets/bytes32CIDs.txt` containing the metadata IPFS
-CIDv1 converted to bytes32, used by the minting script next.
+### Run Minting Script
 
-### Run Deployment Script
+Mint locally
 
 `forge script script/Mint.s.sol:Anvil --fork-url=localhost -vv --broadcast`
 
-or
+or mint on testnet
 
 `forge script script/Mint.s.sol:Goerli --fork-url=goerli -vv --broadcast`
 
 This script will iterate each line in `./src/assets/bytes32CIDs.txt` and mint a new token id for each NFT published on
 IPFS in the previous step.
 
-### Get a Google API Key
+## License
 
-used for social login // TODO
+The MIT License (MIT)
 
-### Start Vite
+Copyright (c) 2014-2023 Sahat Yalkabov
 
-`vite`
+Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the "Software"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
