@@ -18,7 +18,7 @@ import { ethers, Contract } from "ethers";
 import abi from "./assets/ERC721SovreignLazyMint.abi.json";
 import "./App.css";
 
-const contractAddress = "0x091541AC5b5B1BCBd879F4dCD07B5F01007aBA7B"; // hardcoded for simplicity
+const contractAddress = "0xbf9bC60DFBC46D8e9ca6504583330593f6dF8246"; // hardcoded for simplicity
 
 const clientId = process.env.REACT_APP_WEB3AUTH_CLIENT_ID as string; // get from https://dashboard.web3auth.io
 
@@ -26,20 +26,26 @@ function App() {
   const [web3auth, setWeb3auth] = useState<Web3Auth | null>(null);
   const [provider, setProvider] = useState<IProvider | null>(null);
   const [nftContract, setNftContract] = useState<Contract | null>(null);
+  const [artistSigner, setArtistSigner] = useState<ethers.Signer | null>(null); // TODO: [artistSigner, setArtistSigner
 
   const [panel, setPanel] = useState<"main" | "owner">("main");
 
   useEffect(() => {
     const init = async () => {
-      const provider = new ethers.providers.JsonRpcProvider(
+      const ethersProvider = new ethers.providers.JsonRpcProvider(
         `https://goerli.infura.io/v3/${process.env.REACT_APP_INFURA_PROJECT_ID}`
       );
       const contractInstance = new ethers.Contract(
         contractAddress,
         abi,
-        provider
+        ethersProvider
       );
       setNftContract(contractInstance);
+      const signer = new ethers.Wallet(
+        process.env.REACT_APP_PRIV_KEY as string,
+        ethersProvider
+      );
+      setArtistSigner(signer);
     };
 
     init();
@@ -160,7 +166,7 @@ function App() {
       >
         <Navbar login={login} />
 
-        <Main provider={null} />
+        <Main contract={nftContract} />
       </div>
     );
   }
@@ -180,7 +186,11 @@ function App() {
         />
 
         {panel === "main" ? (
-          <EtherspotMain provider={provider} contract={nftContract} />
+          <EtherspotMain
+            provider={provider}
+            contract={nftContract}
+            signer={artistSigner}
+          />
         ) : (
           <OwnerPanel contract={nftContract} />
         )}

@@ -10,7 +10,7 @@ import {
 import { Dialog } from "@mui/material";
 import { Contract } from "ethers";
 
-const contractAddress = "0x091541AC5b5B1BCBd879F4dCD07B5F01007aBA7B"; // hardcoded for simplicity
+const contractAddress = "0xbf9bC60DFBC46D8e9ca6504583330593f6dF8246"; // hardcoded for simplicity
 
 const OwnerPanel = ({ contract }: { contract: Contract | null }) => {
   const etherspotAddress = useWalletAddress("etherspot-prime", 5);

@@ -1,8 +1,9 @@
 import React, { useEffect, useState } from "react";
 import { IProvider } from "@web3auth/base";
 import nftData from "../assets/nftdata.json";
+import { Contract } from "ethers";
 
-const Main = ({ provider }: { provider: IProvider | null }) => {
+const Main = ({ contract }: { contract: Contract | null }) => {
   return (
     <>
       <div
@@ -21,7 +22,7 @@ const Main = ({ provider }: { provider: IProvider | null }) => {
           }}
         >
           {nftData.map((nft, i) => (
-            <Card nft={nft} key={i} />
+            <Card nft={nft} key={i} contract={contract} />
           ))}
         </div>
       </div>
@@ -31,7 +32,25 @@ const Main = ({ provider }: { provider: IProvider | null }) => {
 
 export default Main;
 
-const Card = ({ nft }: { nft: (typeof nftData)[number] }) => {
+const Card = ({
+  nft,
+  contract,
+}: {
+  nft: (typeof nftData)[number];
+  contract: Contract | null;
+}) => {
+  const [ownerAddress, setOwnerAddress] = useState<string | null>(null);
+  useEffect(() => {
+    if (!contract || nft.tokenId === null) {
+      setOwnerAddress(null);
+      return;
+    }
+    const checkOwner = async () => {
+      const owner = (await contract.ownerOf(nft.tokenId)) as string;
+      setOwnerAddress(owner);
+    };
+    checkOwner();
+  }, [nft.tokenId]);
   return (
     <div
       style={{
@@ -61,6 +80,12 @@ const Card = ({ nft }: { nft: (typeof nftData)[number] }) => {
         }}
       >
         <p>test</p>
+        <p>
+          owner:{" "}
+          {ownerAddress
+            ? ownerAddress
+            : "0xf9d7F42FbE699D026618d62657208c38a4604ca2"}
+        </p>
         <button
           style={{
             border: "none",
