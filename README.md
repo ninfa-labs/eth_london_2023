@@ -16,7 +16,12 @@ controlled by any web2 authentication method, OAuth, OTP or WebAuthn.
 
 ## Table of Contents
 
-[ToC]
+- [Features](#features)
+- [Prerequisites](#prerequisites)
+- [Getting Started](#getting-started)
+- [Obtaining API Keys](#obtaining-api-keys)
+- [Initializing The Project](#initializing-the-project)
+- [License](#license)
 
 ## Features
 
@@ -42,8 +47,6 @@ controlled by any web2 authentication method, OAuth, OTP or WebAuthn.
 - [Foundry](https://book.getfoundry.sh/getting-started/installation)
 
 ## Getting Started
-
-**Step 1:** The easiest way to get started is to clone the repository:
 
 ```bash
 # Install Node Modules
@@ -77,7 +80,7 @@ REACT_APP_GOOGLE=""
 REACT_APP_WEB3AUTH_CLIENT_ID=""
 ```
 
-## Initializing the Projecy
+## Initializing the Project
 
 ### Run Anvil
 
@@ -87,9 +90,11 @@ In a new terminal start the development blockchain
 
 ### Run Deployment Script
 
+Deploy Locally
+
 `forge script script/DeployERC721.s.sol:Anvil --fork-url=localhost -vv --broadcast`
 
-or
+or deploy on testnet
 
 `forge script script/DeployERC721.s.sol:Goerli --fork-url=goerli -vv --broadcast`
 
@@ -107,9 +112,11 @@ instance, i.e. the CREATE tx is the first on the local blockchain and the deploy
 
 ### Run Minting Script
 
+Mint locally
+
 `forge script script/Mint.s.sol:Anvil --fork-url=localhost -vv --broadcast`
 
-or
+or mint on testnet
 
 `forge script script/Mint.s.sol:Goerli --fork-url=goerli -vv --broadcast`
 
