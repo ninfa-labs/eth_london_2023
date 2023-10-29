@@ -4,7 +4,7 @@ Wallet-less web2 onboarding for web3 DAPPs
 
 **Live Demo**: TODO
 
-**Swimlanes Diagram**: [Link](https://swimlanes.io/u/de98ILCjT) exemplifying start-to-finish web2 user journery from onboarding with their web2 accounts to becoming a web3 citizen without having to change their original address, thanks to Account Abstraction!
+**Swimlanes Diagram**: [Link](https://swimlanes.io/u/de98ILCjT) exemplifying start-to-finish web2 user journery from onboarding with their web2 accounts to becoming a web3 citizen without having to change their original address, thanks to Account Abstraction! The diagram shows using Lit Protocol as the MPC wallet provider instead of Web3Auth as we had to pivot mid-way through the hackthon due to Lit SDK import issues, the flow is the same.
 
 An fully functional NFT marketplace for web2 (and web3) users.
 
