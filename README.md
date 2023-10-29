@@ -4,8 +4,6 @@ Wallet-less web2 authentication and UX for web3 DAPPs
 
 **Live Demo**: [Link](https://hackathon-starter-1.ydftech.com/)
 
-// TODO Firebase build
-
 **Swimlanes Diagram**: [Link](https://swimlanes.io/u/de98ILCjT) exemplifying start-to-finish web2 user journery from onboarding with their web2 accounts to becoming a web3 citizen without having to change their original address, thanks to Account Abstraction!
 
 An fully functional NFT marketplace for web2 (and web3) users.
@@ -13,6 +11,10 @@ An fully functional NFT marketplace for web2 (and web3) users.
 Collectors can buy, sell and transfer NFTs without ever creating a crypto wallet or
 paying for gas. Any NFT or ETH is sent to an Account Abstraction contract ('s predicted address), whose owner is an MPC wallet (or Multisig owned by one or more wallets) created and
 controlled by any web2 authentication method, OAuth, OTP or WebAuthn.
+
+<h4 align="center">Web2 Authentication</h4>
+
+![](https://github.com/ninfa-io/eth_london_2023/assets/17223455/0b1f0ae5-a471-4193-8648-b6ffe6a87319)
 
 ## Table of Contents
 
