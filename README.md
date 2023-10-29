@@ -1,8 +1,8 @@
 ![](https://ninfa.io/static/media/darklogo.649655b0.png)
-Wallet-less web2 authentication and UX for web3 DAPPs
+Wallet-less web2 onboarding for web3 DAPPs
 =======================
 
-**Live Demo**: [Link](https://hackathon-starter-1.ydftech.com/)
+**Live Demo**: TODO
 
 **Swimlanes Diagram**: [Link](https://swimlanes.io/u/de98ILCjT) exemplifying start-to-finish web2 user journery from onboarding with their web2 accounts to becoming a web3 citizen without having to change their original address, thanks to Account Abstraction!
 

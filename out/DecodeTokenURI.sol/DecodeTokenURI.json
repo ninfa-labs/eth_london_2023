@@ -11,7 +11,7 @@
     "linkReferences": {}
   },
   "methodIdentifiers": {},
-  "rawMetadata": "{\"compiler\":{\"version\":\"0.8.22+commit.4fc1097e\"},\"language\":\"Solidity\",\"output\":{\"abi\":[],\"devdoc\":{\"details\":\"stripped down version of https://github.com/MrChico/verifyIPFS/\",\"kind\":\"dev\",\"methods\":{},\"version\":1},\"userdoc\":{\"kind\":\"user\",\"methods\":{},\"version\":1}},\"settings\":{\"compilationTarget\":{\"contracts/token/common/DecodeTokenURI.sol\":\"DecodeTokenURI\"},\"evmVersion\":\"paris\",\"libraries\":{},\"metadata\":{\"appendCBOR\":false,\"bytecodeHash\":\"none\"},\"optimizer\":{\"details\":{\"constantOptimizer\":true,\"cse\":true,\"deduplicate\":true,\"inliner\":true,\"jumpdestRemover\":true,\"orderLiterals\":true,\"peephole\":true,\"simpleCounterForLoopUncheckedIncrement\":true,\"yul\":true,\"yulDetails\":{\"optimizerSteps\":\"dhfoDgvulfnTUtnIf:fDnTOcmu\",\"stackAllocation\":true}},\"runs\":4194304},\"remappings\":[\":ds-test/=lib/solmate/lib/ds-test/src/\",\":forge-std/=lib/forge-std/src/\",\":openzeppelin/=lib/openzeppelin-contracts/contracts/\",\":prb-test/=lib/prb-test/src/\",\":solmate/=lib/solmate/src/\",\":src/=contracts/\",\":test/=test/\"],\"viaIR\":true},\"sources\":{\"contracts/token/common/DecodeTokenURI.sol\":{\"keccak256\":\"0x94290c9d8b146ecdf51ef8d06abe343d5702616e47162ef116351c7495e84c02\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://f2a10edf2fd35ae1e2565de1ef4cb89c44a16c4fe46ca56a4dcb457b0ebef4f5\",\"dweb:/ipfs/QmRwfsffDfkdHiHqfR9DddgY2AchvvQD2uezdfgPpHC5pr\"]}},\"version\":1}",
+  "rawMetadata": "{\"compiler\":{\"version\":\"0.8.22+commit.4fc1097e\"},\"language\":\"Solidity\",\"output\":{\"abi\":[],\"devdoc\":{\"details\":\"stripped down version of https://github.com/MrChico/verifyIPFS/\",\"kind\":\"dev\",\"methods\":{},\"version\":1},\"userdoc\":{\"kind\":\"user\",\"methods\":{},\"version\":1}},\"settings\":{\"compilationTarget\":{\"contracts/token/common/DecodeTokenURI.sol\":\"DecodeTokenURI\"},\"evmVersion\":\"paris\",\"libraries\":{},\"metadata\":{\"appendCBOR\":false,\"bytecodeHash\":\"none\"},\"optimizer\":{\"details\":{\"constantOptimizer\":true,\"cse\":true,\"deduplicate\":true,\"inliner\":true,\"jumpdestRemover\":true,\"orderLiterals\":true,\"peephole\":true,\"simpleCounterForLoopUncheckedIncrement\":true,\"yul\":true,\"yulDetails\":{\"optimizerSteps\":\"dhfoDgvulfnTUtnIf:fDnTOcmu\",\"stackAllocation\":true}},\"runs\":4194304},\"remappings\":[\":ds-test/=lib/forge-std/lib/ds-test/src/\",\":forge-std/=lib/forge-std/src/\",\":openzeppelin/=lib/openzeppelin-contracts/contracts/\",\":prb-test/=lib/prb-test/src/\",\":solmate/=lib/solmate/src/\",\":src/=contracts/\",\":test/=test/\"],\"viaIR\":true},\"sources\":{\"contracts/token/common/DecodeTokenURI.sol\":{\"keccak256\":\"0x94290c9d8b146ecdf51ef8d06abe343d5702616e47162ef116351c7495e84c02\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://f2a10edf2fd35ae1e2565de1ef4cb89c44a16c4fe46ca56a4dcb457b0ebef4f5\",\"dweb:/ipfs/QmRwfsffDfkdHiHqfR9DddgY2AchvvQD2uezdfgPpHC5pr\"]}},\"version\":1}",
   "metadata": {
     "compiler": {
       "version": "0.8.22+commit.4fc1097e"
@@ -32,7 +32,7 @@
     },
     "settings": {
       "remappings": [
-        "ds-test/=lib/solmate/lib/ds-test/src/",
+        "ds-test/=lib/forge-std/lib/ds-test/src/",
         "forge-std/=lib/forge-std/src/",
         "openzeppelin/=lib/openzeppelin-contracts/contracts/",
         "prb-test/=lib/prb-test/src/",

@@ -66,7 +66,7 @@
       "runs": 4194304
     },
     "remappings": [
-      ":ds-test/=lib/solmate/lib/ds-test/src/",
+      ":ds-test/=lib/forge-std/lib/ds-test/src/",
       ":forge-std/=lib/forge-std/src/",
       ":openzeppelin/=lib/openzeppelin-contracts/contracts/",
       ":prb-test/=lib/prb-test/src/",
@@ -302,11 +302,11 @@
       ]
     },
     "script/DeployERC721.s.sol": {
-      "keccak256": "0x8fe03c5a8dc0716edf2bd41afdae795909f262296469f21e0957abf17345fbf6",
+      "keccak256": "0x0ececb8a5e8bc11026bdc387bd7076ce08021b306f53da2e840a9c6a80c1d33a",
       "license": "MIT",
       "urls": [
-        "bzz-raw://e99699d387d6be4d27104d16748ad67dd32bf279e284b319467896347e307f24",
-        "dweb:/ipfs/QmajC9do16xRfMimQVFjuk3vZyLx6wGXWQy6gso6TqowJk"
+        "bzz-raw://96e33d8e3eedb31ac74860e159a0b2dfdcad41e291b7de46c07bfc0bb0255e2e",
+        "dweb:/ipfs/QmWrjPnSVkNDMZgjDx9QTe7jkjbKYivP8pYFBjb631XHyK"
       ]
     }
   },

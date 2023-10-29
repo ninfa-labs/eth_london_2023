@@ -26,7 +26,7 @@ contract Goerli is Script {
     ERC721Sovereign private _ERC721Sovereign;
 
     function run() public {
-        uint256 deployerPrivateKey = vm.envUint("GOERLI_DEPLOYER_PK");
+        uint256 deployerPrivateKey = vm.envUint("REACT_APP_PRIV_KEY");
         address deployer = vm.rememberKey(deployerPrivateKey);
         vm.startBroadcast(deployerPrivateKey);
 

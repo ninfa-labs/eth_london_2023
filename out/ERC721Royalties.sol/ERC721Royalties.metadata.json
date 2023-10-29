@@ -427,7 +427,7 @@
       "runs": 4194304
     },
     "remappings": [
-      ":ds-test/=lib/solmate/lib/ds-test/src/",
+      ":ds-test/=lib/forge-std/lib/ds-test/src/",
       ":forge-std/=lib/forge-std/src/",
       ":openzeppelin/=lib/openzeppelin-contracts/contracts/",
       ":prb-test/=lib/prb-test/src/",

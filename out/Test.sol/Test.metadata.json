@@ -589,7 +589,7 @@
       "runs": 4194304
     },
     "remappings": [
-      ":ds-test/=lib/solmate/lib/ds-test/src/",
+      ":ds-test/=lib/forge-std/lib/ds-test/src/",
       ":forge-std/=lib/forge-std/src/",
       ":openzeppelin/=lib/openzeppelin-contracts/contracts/",
       ":prb-test/=lib/prb-test/src/",
@@ -600,6 +600,14 @@
     "viaIR": true
   },
   "sources": {
+    "lib/forge-std/lib/ds-test/src/test.sol": {
+      "keccak256": "0x8758531bbac3972efcf1fa46383dbe1d276406fe527bc7abb2f236486278e83b",
+      "license": "GPL-3.0-or-later",
+      "urls": [
+        "bzz-raw://1f64264d61506847acf8761e84aff690cebe830958eac00bac7924d8be569240",
+        "dweb:/ipfs/QmSekDJvJ82MZAmr63n7YvfLzQ7gS4NLSHPmHL3GN3rw8k"
+      ]
+    },
     "lib/forge-std/src/Base.sol": {
       "keccak256": "0x4ff1a785311017d1eedb1b4737956fa383067ad34eb439abfec1d989754dde1c",
       "license": "MIT",
@@ -734,14 +742,6 @@
       "urls": [
         "bzz-raw://a500ad81dea226f9910e6b50f99a9ff930105e393a692cbfb2185e4cdb4424ae",
         "dweb:/ipfs/QmVbUQpXNMmMWRiy4FvBNczzq46BMGfUoBikvSHNiCxVTq"
-      ]
-    },
-    "lib/solmate/lib/ds-test/src/test.sol": {
-      "keccak256": "0xb39cd1d5220cb474947b131e15a4538334b7e886af244b440ae5c9c6bba96a54",
-      "license": "GPL-3.0-or-later",
-      "urls": [
-        "bzz-raw://3101520221449ac0070bda3881311a71d9aa87e5210765e875246922cb5cb5f5",
-        "dweb:/ipfs/Qmbg6kAHNoG7ox9N9Xqd9Ere2H2XixMFWFqvyPwFCzB3Gr"
       ]
     }
   },
