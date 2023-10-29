@@ -2,73 +2,21 @@
 Wallet-less web2 authentication and UX for web3 DAPPs
 =======================
 
-An fully functional NFT marketplace for web2 (and web3) users.
-
 **Live Demo**: [Link](https://hackathon-starter-1.ydftech.com/)
 
 // TODO Firebase build
 
 **Swimlanes Diagram**: [Link](https://swimlanes.io/u/de98ILCjT) exemplifying start-to-finish web2 user journery from onboarding with their web2 accounts to becoming a web3 citizen without having to change their original address, thanks to Account Abstraction!
 
-In this demo collectos (web2 users) can buy, sell and transfer NFTs without ever creating a crypto wallet or
+An fully functional NFT marketplace for web2 (and web3) users.
+
+Collectors can buy, sell and transfer NFTs without ever creating a crypto wallet or
 paying for gas. Any NFT or ETH is sent to an Account Abstraction contract ('s predicted address), whose owner is an MPC wallet (or Multisig owned by one or more wallets) created and
 controlled by any web2 authentication method, OAuth, OTP or WebAuthn.
 
-### Testimonials
-
-> [**“Nice! That README alone is already gold!”**](https://www.producthunt.com/tech/hackathon-starter#comment-224732)<br>
-> — Adrian Le Bas
-
-> [**“Awesome. Simply awesome.”**](https://www.producthunt.com/tech/hackathon-starter#comment-224966)<br>
-> — Steven Rueter
-
-> [**“I'm using it for a year now and many projects, it's an awesome boilerplate and the project is well maintained!”**](https://www.producthunt.com/tech/hackathon-starter#comment-228610)<br>
-> — Kevin Granger
-
-> **“Small world with Sahat's project. We were using his hackathon starter for our hackathon this past weekend and got some prizes. Really handy repo!”**<br>
-> — Interview candidate for one of the companies I used to work with.
-
-<h4 align="center">Seamless Web2 Authentication User Onboarding</h4>
-
-![](https://lh6.googleusercontent.com/-KQTmCFNK6MM/U7OZpznjDuI/AAAAAAAAERc/h3jR27Uy1lE/w1366-h1006-no/Screenshot+2014-07-02+01.32.22.png)
-
-<h4 align="center">Buying NFTs via Credit Card</h4>
-
-![](https://lh5.googleusercontent.com/-oJ-7bSYisRY/U1a-WhK_LoI/AAAAAAAAECM/a04fVYgefzw/w1474-h1098-no/Screen+Shot+2014-04-22+at+3.08.33+PM.png)
-
-<h4 align="center">Selling NFTs, i.e. Signing Blockchain Transactions via MPC wallets</h4>
-
-![](https://lh5.googleusercontent.com/-oJ-7bSYisRY/U1a-WhK_LoI/AAAAAAAAECM/a04fVYgefzw/w1474-h1098-no/Screen+Shot+2014-04-22+at+3.08.33+PM.png)
-
-<h4 align="center">Transferring NFTs Using Etherspot's Paymaster to Subsidize On-chain Transactions</h4>
-
-![](https://lh5.googleusercontent.com/-BJD2wK8CvC8/VLodBsyL-NI/AAAAAAAAEx0/SafE6o_qq_I/w1818-h1186-no/Screenshot%2B2015-01-17%2B00.25.49.png)
-
 ## Table of Contents
 
-- [Features](#features)
-- [Prerequisites](#prerequisites)
-- [Getting Started](#getting-started)
-- [Obtaining API Keys](#obtaining-api-keys)
-- [Project Structure](#project-structure)
-- [List of Packages](#list-of-packages)
-- [Useful Tools and Resources](#useful-tools-and-resources)
-- [Recommended Design Resources](#recommended-design-resources)
-- [Recommended Node.js Libraries](#recommended-nodejs-libraries)
-- [Recommended Client-side Libraries](#recommended-client-side-libraries)
-- [Pro Tips](#pro-tips)
-- [FAQ](#faq)
-- [How It Works](#how-it-works-mini-guides)
-- [Cheatsheets](#cheatsheets)
-  - [ES6](#-es6-cheatsheet)
-  - [JavaScript Date](#-javascript-date-cheatsheet)
-  - [Mongoose Cheatsheet](#mongoose-cheatsheet)
-- [Deployment](#deployment)
-- [Docker](#docker)
-- [Production](#production)
-- [Changelog](#changelog)
-- [Contributing](#contributing)
-- [License](#license)
+[ToC]
 
 ## Features
 
